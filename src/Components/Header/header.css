@@ -24,4 +24,10 @@
 
 .right{
   flex: 3;
+  flex-direction: end;
+}
+
+.navImage{
+  height: 45px;
+  border-radius: 50%;
 }

@@ -7,7 +7,7 @@ function App() {
   return (
   <IonApp >
     <Header />
-    <Test />
+
   </IonApp>
   );
 }
