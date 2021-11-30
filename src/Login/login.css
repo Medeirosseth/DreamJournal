@@ -8,13 +8,12 @@ justify-content: center;
 .username {
   /* margin-top: 50%; */
   justify-content: space-around;
-  border: black 1px solid;
   height: 100px;
   width: 200px;
 }
 
 .password{
-  border: black 1px solid
+
 }
 
 .login {

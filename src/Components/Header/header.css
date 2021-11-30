@@ -1,0 +1,27 @@
+.header{
+  display: flex;
+  height: 42px;
+  width: 100%;
+  background-color: rgba(206, 202, 205, 0.653);
+}
+
+.left{
+  flex: 3;
+}
+
+.add {
+  font-size: 25px;
+  margin-left: 4px;
+  margin-top: 10%;
+}
+
+.center{
+  flex: 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right{
+  flex: 3;
+}

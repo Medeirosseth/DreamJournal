@@ -1,5 +1,5 @@
 import React from 'react'
-import {IonInput, IonCard, IonItemDivider} from '@ionic/react'
+import {IonInput, IonCard } from '@ionic/react'
 import './login.css'
 
 export default function login() {

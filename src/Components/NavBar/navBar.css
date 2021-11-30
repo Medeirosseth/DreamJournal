@@ -1,0 +1,33 @@
+.navBar {
+  display: flex;
+  height: 30px;
+  background-color: rgb(249, 247, 245);
+}
+
+.home {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.entries {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dictionary {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.settings {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
