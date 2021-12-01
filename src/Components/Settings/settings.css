@@ -1,0 +1,13 @@
+.settingsContainer {
+  /* display: flex; */
+}
+.settingsLogo {
+  margin-left: 50px;
+  width:70%;
+  height:auto;
+  border-radius: 50%;
+}
+.settingsButtons {
+  display: flex;
+  flex-direction: column;
+}
