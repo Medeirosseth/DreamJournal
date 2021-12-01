@@ -1,15 +1,26 @@
+
 .container {
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-
+margin-top: 10%;
 }
+
+.loginImageContainer{
+  display: flex;
+}
+
+.loginLogo{
+  margin: 10px 0 0 30px;
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+}
+
 .username {
-  /* margin-top: 50%; */
-  justify-content: space-around;
-  height: 100px;
-  width: 200px;
+
+
 }
 
 .password{

@@ -23,7 +23,7 @@ margin-left: 20px;
 
 .userContent{
   height: 100px;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .userEntry{

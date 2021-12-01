@@ -8,8 +8,7 @@ import Entries from "./Entires/Entries";
 function App() {
   return (
   <IonApp >
-    <Header />
-    <Entries />
+    <Login />
   </IonApp>
   );
 }
