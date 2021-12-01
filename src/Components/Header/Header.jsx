@@ -11,7 +11,12 @@ export default function Header() {
         <div className="right">
           <img className="navImage" src="https://www.michaelburtonpdx.com/assets/headshot-removebg-preview.png" alt="user profile" /> </div>
       </div>
-      <NavBar />
+      <div className="navBar">
+        <div className="home">Home</div>
+        <div className="entries">Entries</div>
+        <div className="dictionary"> Dictionary </div>
+        <div className="settings"></div>
+      </div>
     </>
   )
 }

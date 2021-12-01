@@ -1,29 +1,22 @@
 import React from 'react';
-import { IonApp, IonContent, IonRippleEffect } from '@ionic/react';
+import { IonApp, IonContent, IonRippleEffect, IonTabs, IonTabBar, IonTabButton, IonLabel, IonBadge, IonIcon, IonProgressBar } from '@ionic/react';
 import './test.css';
 
 export const Test = () => (
-  <IonApp>
-   <IonContent>
-      <div className="ion-activatable ripple-parent">
-        A plain div with a bounded ripple effect
-        <IonRippleEffect></IonRippleEffect>
-      </div>
+  <IonContent>
+    {/*-- Default Progressbar --*/}
+    <IonProgressBar></IonProgressBar><br />
 
-      <button className="ion-activatable ripple-parent">
-        A button with a bounded ripple effect
-        <IonRippleEffect></IonRippleEffect>
-      </button>
+    {/*-- Default Progressbar with 50 percent --*/}
+    <IonProgressBar value={0.5}></IonProgressBar><br />
 
-      <div className="ion-activatable ripple-parent">
-        A plain div with an unbounded ripple effect
-        <IonRippleEffect type="unbounded"></IonRippleEffect>
-      </div>
+    {/*-- Colorize Progressbar --*/}
+    <IonProgressBar color="primary" value={0.5}></IonProgressBar><br />
+    <IonProgressBar color="secondary" value={0.5}></IonProgressBar><br />
 
-      <button className="ion-activatable ripple-parent">
-        A button with an unbounded ripple effect
-        <IonRippleEffect type="unbounded"></IonRippleEffect>
-      </button>
-    </IonContent>
-  </IonApp>
+    {/*-- Other types --*/}
+    <IonProgressBar value={0.25} buffer={0.5}></IonProgressBar><br />
+    <IonProgressBar type="indeterminate"></IonProgressBar><br />
+    <IonProgressBar type="indeterminate" reversed={true}></IonProgressBar><br />
+  </IonContent>
 );

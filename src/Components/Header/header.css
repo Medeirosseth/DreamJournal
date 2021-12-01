@@ -3,6 +3,9 @@
   height: 42px;
   width: 100%;
   background-color: rgba(206, 202, 205, 0.653);
+  top: 0%;
+  position: sticky;
+  z-index: 999;
 }
 
 .left{
