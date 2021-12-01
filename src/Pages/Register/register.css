@@ -1,0 +1,25 @@
+.registerLabel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.registerLogo{
+ 
+  margin: 20px 0 0 30px;
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+}
+
+.registerImgContainer {
+  margin-right: 30px;
+}
+
+.registerContainer{
+  margin-top: 25px;
+}
+
+.registerTitle {
+
+}

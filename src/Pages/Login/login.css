@@ -7,7 +7,7 @@ justify-content: center;
 margin-top: 10%;
 }
 
-.loginImageContainer{
+.loginImgContainer{
   display: flex;
 }
 
@@ -18,16 +18,28 @@ margin-top: 10%;
   border-radius: 50%;
 }
 
-.username {
+/* .username {
 
 
 }
 
 .password{
 
-}
+} */
 
 .login {
   display: flex;
   
 }
+
+/* Login button needs to be bigger and center
+while the register button is underneath, smaller, and centered
+
+
+/* loginButton {
+  float: left
+}
+
+.register{
+  float: right;
+} */

@@ -19,11 +19,11 @@ export default function login() {
         <IonInput className="password" placeholder="password"></IonInput>
       </IonCard>
       <IonButton>
-      <span className="link">Login</span>
+      <span className="link loginButton">Login</span>
     </IonButton>
     </form>
       <IonButton>
-        <span className="link">Register</span>
+        <span className="link register">Register</span>
       </IonButton>
     </div>
   )
