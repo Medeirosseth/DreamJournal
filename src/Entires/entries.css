@@ -1,6 +1,7 @@
 .entries{
   display: flex;
   flex-direction: column;
+  background-color: rgb(249, 247, 245);
 }
 
 .entryTitle{
@@ -22,10 +23,11 @@ margin-left: 20px;
 }
 
 .userContent{
+  margin-top: 2px;
   height: 100px;
   overflow: hidden;
 }
 
 .userEntry{
-margin-top: 10px;
+margin-top: 30px;
 }

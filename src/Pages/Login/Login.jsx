@@ -1,6 +1,6 @@
 import React from 'react'
 // import { Link } from 'react-router-dom'
-import {IonInput, IonCard, IonLabel, IonCardHeader, IonCardSubtitle, IonItemDivider, IonButton } from '@ionic/react'
+import {IonInput, IonCard, IonLabel, IonCardSubtitle, IonItemDivider, IonButton } from '@ionic/react'
 import './login.css'
 
 export default function login() {
@@ -19,8 +19,8 @@ export default function login() {
         <IonInput className="password" placeholder="password"></IonInput>
       </IonCard>
       <IonButton>
-      <span className="link loginButton">Login</span>
-    </IonButton>
+        <span className="link loginButton">Login</span>
+      </IonButton>
     </form>
       <IonButton>
         <span className="link register">Register</span>
