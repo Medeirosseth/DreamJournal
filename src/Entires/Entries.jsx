@@ -32,7 +32,7 @@ export default function Entries() {
         <div className="delete"><i className="fas fa-times"></i></div>
         </div>
         <IonCardContent className="userContent">
-        Ac tincidunt vitae semper quis lectus. Congue nisi vitae suscipit tellus mauris. 
+        Ac tincidunt vitae semper lectus. Congue nisi vitae suscipit tellus mauris. 
         Sagittis eu volutpat odio facilisis. Cursus mattis molestie a iaculis at erat 
         pellentesque adipiscing. Nunc sed velit dignissim sodales ut eu sem integer. 
         Gravida rutrum quisque non tellus orci. Quis blandit turpis cursus in hac habitasse 
