@@ -1,15 +1,15 @@
 import { IonApp } from "@ionic/react";
+
+import EntryForm from "./Components/entryForm/EntryForm";
 import Header from "./Components/Header/Header";
 import { Test } from "./Components/Test/Test";
 import Login from "./Login/Login";
-import Register from "./Pages/Register/Register";
-import Home from "./Components/HomeScreen/Home";
-import Entries from "./Entires/Entries";
+import Settings from "./Components/Settings/Settings";
+import FeedbackForm from "./Components/FeedbackForm/FeedbackForm";
 
 function App() {
   return (
   <IonApp >
-    <Test />
   </IonApp>
   );
 }
