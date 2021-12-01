@@ -1,22 +1,17 @@
 import React from 'react';
-import { IonApp, IonContent, IonRippleEffect, IonTabs, IonTabBar, IonTabButton, IonLabel, IonBadge, IonIcon, IonProgressBar } from '@ionic/react';
+import {IonAvatar } from '@ionic/react';
+import NavBar from '../NavBar/NavBar';
 import './test.css';
 
 export const Test = () => (
-  <IonContent>
-    {/*-- Default Progressbar --*/}
-    <IonProgressBar></IonProgressBar><br />
-
-    {/*-- Default Progressbar with 50 percent --*/}
-    <IonProgressBar value={0.5}></IonProgressBar><br />
-
-    {/*-- Colorize Progressbar --*/}
-    <IonProgressBar color="primary" value={0.5}></IonProgressBar><br />
-    <IonProgressBar color="secondary" value={0.5}></IonProgressBar><br />
-
-    {/*-- Other types --*/}
-    <IonProgressBar value={0.25} buffer={0.5}></IonProgressBar><br />
-    <IonProgressBar type="indeterminate"></IonProgressBar><br />
-    <IonProgressBar type="indeterminate" reversed={true}></IonProgressBar><br />
-  </IonContent>
+  <>
+  <div className="header">
+    <div className="left"><i className="fas fa-plus add"></i> </div>
+    <div className="center">dReAmSpAcE</div>
+    <IonAvatar className="right">
+      <img className="navImage" src="https://www.michaelburtonpdx.com/assets/headshot-removebg-preview.png" alt="user profile" />
+    </IonAvatar>
+  </div>
+  <NavBar />
+</>
 );

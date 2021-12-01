@@ -9,7 +9,7 @@ import Entries from "./Entires/Entries";
 function App() {
   return (
   <IonApp >
-    <Register />
+    <Test />
   </IonApp>
   );
 }
