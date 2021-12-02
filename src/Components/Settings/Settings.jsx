@@ -1,15 +1,25 @@
 import React from 'react';
-import { IonBadge, IonCard, IonInput, IonButton } from '@ionic/react';
+import { IonBadge, IonLabel, IonCard, IonInput, IonButton } from '@ionic/react';
+import Header from '../Header/Header';
 
 import './settings.css';
 
 export default function Settings() {
   return (
+    <>
+    <Header />
     <div className='settingsContainer'>
-      <img className='settingsLogo' src='https://static.independent.co.uk/2021/07/19/16/newFile-10.jpg?width=1200&auto=webp&quality=75' alt='Dr. Eam logo'/>
-      <IonCard>
+      <div className="cloudContainer">
+        <span className="cloudSettings">
+        Settings
+          </span>
+        <i class="fas fa-cloud cloud"></i>
+      </div>
         <form>
-          <IonInput>User Name </IonInput>
+          <div className='settingsFormRow1'>
+            <IonLabel className='settingLabelName'>User Name:</IonLabel>
+            <IonInput className='settingInputName'>@YourName </IonInput>
+          </div>
           <input type="file" id='avatar' name='avatar' accept='image/png, image/jpeg'></input>
           <div className="dropdown">
             <select>
@@ -26,8 +36,7 @@ export default function Settings() {
           <IonButton>Logout</IonButton>
           <IonButton>Feedback</IonButton>
         </div>
-      </IonCard>
-      
     </div>
+    </>
   )
 }

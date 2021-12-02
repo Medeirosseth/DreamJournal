@@ -15,10 +15,8 @@ import NavBar from "./Components/NavBar/NavBar";
 function App() {
   return (
   <IonApp >
-    <Register />
-    <Home />
-    <Entries/>
-    <FriendEntries/>
+    <Settings />
+    <FeedbackForm />
   </IonApp>
   );
 }

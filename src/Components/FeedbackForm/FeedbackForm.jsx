@@ -8,16 +8,29 @@ import './feedbackForm.css'
 export default function FeedbackForm() {
   return (
     <>
-      <Header />
-      <form className='feedbackForm'>
-        <IonInput className='feedbackEmail' placeholder= "name@email.com" required >
-          Your Email: 
-        </IonInput>
-        <IonTextarea className='feedbackText' placeholder="Let us know what you think." spellcheck='true' required>
-          Your feed back is important to us
-        </IonTextarea>
-        <IonButton>Submit</IonButton>
-      </form>
+    <Header />
+      <div className="feedBack"> 
+        <div className="feedBackContainer"> 
+          <form className='feedbackForm'>
+            <div className="cloudContainer"> 
+              <span className="cloudFeedBack">FEEDBACK</span>
+              <i class="fas fa-cloud cloud"></i>
+            </div>
+            <div className="inputRow1">
+            
+              <IonLabel>Email:</IonLabel> 
+              <IonInput className='feedbackEmail' placeholder= "name@email.com" required >
+              </IonInput>
+            </div>
+            <div className="inputRow2">
+              <IonLabel className="inputRow2Title" >Message...</IonLabel>
+              <IonTextarea className='feedbackText' spellcheck='true' required>
+              </IonTextarea>
+            </div>  
+            <IonButton>Submit</IonButton>
+          </form>
+        </div>
+      </div>
     </>
   )
 }
