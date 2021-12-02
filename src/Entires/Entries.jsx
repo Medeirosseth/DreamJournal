@@ -28,6 +28,7 @@ export default function Entries() {
           </IonText>
         </IonCardContent>
       </IonCard>
+      < b/>
       <IonCard className="userEntry">
       <div className="entryTitle">
         <IonLabel className="entriesUserName">

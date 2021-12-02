@@ -3,7 +3,7 @@ import React from 'react'
 import {IonInput, IonCard, IonLabel, IonCardSubtitle, IonItemDivider, IonButton } from '@ionic/react'
 import './login.css'
 
-export default function login() {
+export default function Login() {
   return (
     <div className="logIn">
       <div className="loginImgContainer"> 

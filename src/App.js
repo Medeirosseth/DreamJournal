@@ -9,7 +9,10 @@ import FriendEntries from "./Components/FriendEntries/FriendEntries";
 function App() {
   return (
   <IonApp >
-    <FriendEntries />
+    <Register />
+    <Home />
+    <Entries/>
+    <FriendEntries/>
   </IonApp>
   );
 }
