@@ -9,7 +9,6 @@ export default function NavBar() {
       <div className="entries">Entries</div>
       <div className="dictionary"> Dictionary </div>
       <div className="settings"><IonBadge color="primary"></IonBadge> </div>
-      
     </div>
   )
 }

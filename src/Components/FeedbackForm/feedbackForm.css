@@ -3,8 +3,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: rgb(249, 247, 245);
 }
 .feedbackLogo {
   width:100%;
   height:auto;
+}
+
+.feedbackEmail{
+  height: 100px;
 }
