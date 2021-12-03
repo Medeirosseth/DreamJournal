@@ -1,0 +1,40 @@
+.postDescription{
+  text-indent: 25px;
+  padding: 5px 10px 10px 15px;
+  font-size: 15px;
+  color: #444;
+  line-height: 24px;
+  margin-top: 15px;
+  /* overflow: hidden;
+  text-overflow: ellipsis; */
+  /* display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical; for small view*/ 
+}
+
+
+.entryBar{
+  display: flex;
+  width:100%;
+  align-items: center;
+}
+
+.emoji{
+  flex: .5;
+}
+
+.entryDreamTitle{
+  flex: 3.5;
+  display: flex;
+  font-weight: bold  
+}
+
+.date{
+  flex: .5;
+}
+
+.delete{
+  flex:1;
+  display: flex;
+  justify-content: flex-end;
+}

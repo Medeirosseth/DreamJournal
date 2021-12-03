@@ -11,6 +11,20 @@ margin-top: 10%;
   display: flex;
 }
 
+.logoContainer{
+  position: relative
+}
+
+.loginText{
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  margin-left: 160px;
+  margin-top: 270px;
+  z-index: 2;
+}
+
+
 .loginLogo{
   margin: 10px 0 0 30px;
   height: 350px;
@@ -18,14 +32,13 @@ margin-top: 10%;
   border-radius: 50%;
 }
 
-/* .username {
-
-
+.container > .username {
+  height: 40px;
 }
 
-.password{
+/* .password{
 
-} */
+}  */
 
 .login {
   display: flex;

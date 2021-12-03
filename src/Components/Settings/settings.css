@@ -40,9 +40,26 @@
   align-items: center;
   justify-content: center;
   width: 90%;
-  margin-left:10px;
+  margin:0 0 20px 10px;
   
 }
+.settingsFormRow2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin:0 0 20px 10px;
+}
+.settingsFormRow3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  margin:0 0 20px 10px;
+}
+
 .settingInputName {
   background-color:white;
   border-radius: 5px;
@@ -50,4 +67,12 @@
 }
 .settingLabelName {
   background-color: rgb(181, 192, 206);
+}
+
+.saveChangesButton{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  
 }

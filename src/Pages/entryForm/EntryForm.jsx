@@ -15,10 +15,10 @@ export default function EntryForm() {
           The Dream:
         </IonTextarea>
         <div className="emojis"> 
-          <span id='Happy'>😃</span>
-          <span id='Nightmare'>👻</span>
-          <span id='Sexy'>🍆</span>
-          <span id='Weird'>🧐 </span>
+          <span id='Happy'><i class="fas fa-sun"></i></span>
+          <span id='Nightmare'><i class="fas fa-book-dead"></i></span>
+          <span id='Sexy'><i class="far fa-grin-stars"></i></span>
+          <span id='Sad'><i class="fas fa-cloud-rain"></i></span>
         </div>
         <div className='privateRow'>
           <IonLabel>Private</IonLabel>

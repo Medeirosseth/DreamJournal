@@ -19,9 +19,11 @@ export default function Register() {
 
   return (
     <div className="register">
-      <span className="registerTitle"> Register </span>
+      <div className="registerText">
+        <span className="registerIMGText"> Register </span>
       <div className="registerImgContainer">
         <img className="registerLogo" src='https://static.independent.co.uk/2021/07/19/16/newFile-10.jpg?width=1200&auto=webp&quality=75'alt='dr.eam logo'/>
+      </div>
       </div>
       <form className="registerForm" onIonSubmit={handleSubmit} >
       <IonCard className="registerContainer">

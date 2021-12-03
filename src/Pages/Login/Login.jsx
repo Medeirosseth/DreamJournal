@@ -7,15 +7,15 @@ export default function Login() {
   return (
     <div className="logIn">
       <div className="loginImgContainer"> 
-        <img className="loginLogo" src='https://static.independent.co.uk/2021/07/19/16/newFile-10.jpg?width=1200&auto=webp&quality=75'alt='dr.eam logo'/>
+      <span className="loginText">LOGIN</span>
+        <div className="logoContainer">
+          <img className="loginLogo" src='https://static.independent.co.uk/2021/07/19/16/newFile-10.jpg?width=1200&auto=webp&quality=75'alt='dr.eam logo'/>
+        </div>
       </div>
       <form className="loginForm">
       <IonCard className="container"> 
-      <IonCardSubtitle className="loginTitle">LOG IN</IonCardSubtitle>
-        <IonLabel>Email</IonLabel>
-        <IonInput className="username" placeholder="username"></IonInput>
+        <IonInput className="username" placeholder="email"></IonInput>
         <IonItemDivider />
-        <IonLabel>PassWord</IonLabel>
         <IonInput className="password" placeholder="password"></IonInput>
       </IonCard>
       <IonButton>

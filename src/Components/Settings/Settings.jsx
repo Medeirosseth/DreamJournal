@@ -20,21 +20,27 @@ export default function Settings() {
             <IonLabel className='settingLabelName'>User Name:</IonLabel>
             <IonInput className='settingInputName'>@YourName </IonInput>
           </div>
-          <input type="file" id='avatar' name='avatar' accept='image/png, image/jpeg'></input>
-          <div className="dropdown">
-            <select>
-              <option>--</option>
-              <option value="lightTheme">Light</option>
-              <option value="darkTheme">Dark</option>
-              <option value="drEamTheam">Dr.Eam</option>
-              <option value="nightmareTheme">Nightmare</option>
-            </select>
+          <div className='settingsFormRow2'>
+            <IonLabel className='settingLabelPhoto'>Profile Photo:</IonLabel>
+            <input  className='avatar' type="file" id='avatar' name='avatar' accept='image/png, image/jpeg'></input>
           </div>
-          <IonButton>Save changes</IonButton>
+          <div className='settingsFormRow3'>
+          <IonLabel className='settingLabelTheme'>Choose Theme:</IonLabel>
+            <div className="dropdown">
+              <select>
+                <option>--</option>
+                <option value="lightTheme">Light</option>
+                <option value="darkTheme">Dark</option>
+                <option value="drEamTheam">Dr.Eam</option>
+                <option value="nightmareTheme">Nightmare</option>
+              </select>
+            </div>
+          </div>
+          <IonButton className='saveChangesButton'>Save changes</IonButton>
         </form>
         <div className="settingsButton">
-          <IonButton>Logout</IonButton>
-          <IonButton>Feedback</IonButton>
+          <IonButton className='logOutButton'>Logout</IonButton>
+          <IonButton className='feedBackButton'>Feedback</IonButton>
         </div>
     </div>
     </>

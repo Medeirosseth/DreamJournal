@@ -5,7 +5,6 @@
 }
 
 .registerLogo{
- 
   margin: 20px 0 0 30px;
   height: 350px;
   width: 350px;
@@ -14,12 +13,19 @@
 
 .registerImgContainer {
   margin-right: 30px;
+  position: relative;
+}
+
+.registerIMGText {
+  position: absolute;
+  margin-left: 150px;
+  font-size: 30px;
+  color:rgb(250, 250, 250);
+  z-index: 2;
+  margin-top: 300px;
+
 }
 
 .registerContainer{
   margin-top: 25px;
-}
-
-.registerTitle {
-
 }
