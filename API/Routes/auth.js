@@ -1,4 +1,4 @@
-const router = require("express").Router;
+const router = require("express").Router();
 const User = require("../Models/User")
 
 
@@ -14,8 +14,11 @@ router.post("/register", async (req, res) => {
 
     const user = await newUser.save()
 
-    res.status(200).json("user")
+    res.status(200).json(user)
   } catch(err){
     res.status(500).json(err)
   }
 })
+
+
+module.exports = router
