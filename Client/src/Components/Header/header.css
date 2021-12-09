@@ -1,0 +1,43 @@
+.header{
+  display: flex;
+  height: 42px;
+  width: 100%;
+  background-color: rgba(206, 202, 205, 0.653);
+  top: 0%;
+  position: sticky;
+  z-index: 999;
+}
+
+.left{
+  flex: 3;
+}
+
+
+.cloud{
+  font-size: 23px;
+}
+.add {
+  font-size: 25px;
+  margin-left: 4px;
+  margin-top: 10%;
+}
+
+.center{
+  flex: 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right{
+  flex: 3;
+}
+
+.navImage{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin-top: 12px;
+  margin-left: 40px;
+  object-fit: cover;
+}
