@@ -1,20 +1,20 @@
 ion-card {
   height: calc(100vh-72px);
 }
-.entryForm {
+.postForm {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.entryTitle {
+.postTitle {
   margin-top: 10%;
   /* align-items: center;
   justify-content: space-around; */
   /* width: 80vh; */
 }
-.entryText {
+.postText {
   margin-bottom: 10%;
   /* align-items: center;
   justify-content: space-around; */

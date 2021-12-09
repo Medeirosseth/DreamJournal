@@ -1,10 +1,10 @@
-.entries{
+.posts{
   display: flex;
   flex-direction: column;
   background-color: rgb(249, 247, 245);
 }
 
-.entryTitle{
+.postTitle{
   display: flex;
 }
 
@@ -18,16 +18,16 @@
   font-size: large;
 }
 
-.entriesUserName{
+.postsUserName{
 margin-left: 20px;
 }
 
-.userContent{
+.postContent{
   margin-top: 2px;
   height: 100px;
   
 }
 
-.userEntry{
+.userPost{
 margin-top: 30px;
 }

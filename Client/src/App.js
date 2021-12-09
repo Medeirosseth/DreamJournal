@@ -1,18 +1,29 @@
+import React, {useState, useEffect} from 'react'
 import { IonApp } from "@ionic/react";
-import Header from "./Components/Header/Header";
-import { Test } from "./Components/Test/Test";
 import Register from "./Pages/Register/Register";
 import Home from "./Components/HomeScreen/Home";
-import Entries from "./Entires/Entries";
-import FriendEntries from "./Components/FriendEntries/FriendEntries";
+import Posts from "./Posts/Posts";
+import PostForm from './Pages/postForm/PostForm';
+
+ import axios from 'axios'
 
 function App() {
+  const [posts, setPosts] = useState([])
+  
+  useEffect(() => {
+    const fetchPosts = async ()=>{
+    const res = await axios.get("/posts")
+    setPosts(res.data)
+  }
+  fetchPosts()
+  },[])
+
   return (
   <IonApp >
     <Register />
     <Home />
-    <Entries/>
-    <FriendEntries/>
+    <Posts posts={posts}/>
+    <PostForm />
   </IonApp>
   );
 }

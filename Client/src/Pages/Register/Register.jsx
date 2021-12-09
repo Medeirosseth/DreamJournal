@@ -25,7 +25,7 @@ export default function Register() {
         <img className="registerLogo" src='https://static.independent.co.uk/2021/07/19/16/newFile-10.jpg?width=1200&auto=webp&quality=75'alt='dr.eam logo'/>
       </div>
       </div>
-      <form className="registerForm" onIonSubmit={handleSubmit} >
+      <form className="registerForm"  >
       <IonCard className="registerContainer">
         <IonCardSubtitle className="registerTitle">
           <IonLabel className="registerLabel"> UserName</IonLabel>

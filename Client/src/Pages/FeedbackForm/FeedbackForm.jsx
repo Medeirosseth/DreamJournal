@@ -14,7 +14,7 @@ export default function FeedbackForm() {
           <form className='feedbackForm'>
             <div className="cloudContainer"> 
               <span className="cloudFeedBack">FEEDBACK</span>
-              <i class="fas fa-cloud cloud"></i>
+              <i className="fas fa-cloud cloud"></i>
             </div>
             <div className="inputRow1">
             

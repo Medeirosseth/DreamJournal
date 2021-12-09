@@ -1,15 +1,15 @@
-import { IonCard, IonCardContent, IonCardTitle, IonContent, IonLabel, IonText } from '@ionic/react'
+import { IonCard, IonCardContent, IonLabel, IonText } from '@ionic/react'
 import Header from '../Components/Header/Header'
 import React from 'react'
-import "./entries.css"
-export default function Entries() {
+import "./posts.css"
+export default function Posts() {
   return (
     <>
     <Header />
-    <div className="entries">
-      <IonCard className="userEntry">
-      <div className="entryTitle">
-        <IonLabel className="entriesUserName">
+    <div className="posts">
+      <IonCard className="userPost">
+      <div className="postTitle">
+        <IonLabel className="postsUserName">
           DreamMaChInE
         </IonLabel>
         <div className="emoji"> 😃</div>
@@ -29,9 +29,9 @@ export default function Entries() {
         </IonCardContent>
       </IonCard>
       < b/>
-      <IonCard className="userEntry">
-      <div className="entryTitle">
-        <IonLabel className="entriesUserName">
+      <IonCard className="userPost">
+      <div className="postTitle">
+        <IonLabel className="postsUserName">
           DreamMaChInE
         </IonLabel>
         <div className="emoji"> 😃</div>
@@ -48,9 +48,9 @@ export default function Entries() {
         vitae. Nunc pulvinar sapien et ligula ullamcorper malesuada proin libero.
         </IonCardContent>
       </IonCard>
-      <IonCard className="userEntry">
-      <div className="entryTitle">
-        <IonLabel className="entriesUserName">
+      <IonCard className="userPost">
+      <div className="postTitle">
+        <IonLabel className="postsUserName">
           DreamMaChInE
         </IonLabel>
         <div className="emoji"> 👻</div>
@@ -67,9 +67,9 @@ export default function Entries() {
         vitae. Nunc pulvinar sapien et ligula ullamcorper malesuada proin libero.
         </IonCardContent>
       </IonCard>
-      <IonCard className="userEntry">
-      <div className="entryTitle">
-        <IonLabel className="entriesUserName">
+      <IonCard className="userPost">
+      <div className="postTitle">
+        <IonLabel className="postsUserName">
           DreamMaChInE
         </IonLabel>
         <div className="emoji"> 🧐</div>
@@ -86,9 +86,9 @@ export default function Entries() {
         vitae. Nunc pulvinar sapien et ligula ullamcorper malesuada proin libero.
         </IonCardContent>
       </IonCard>
-      <IonCard className="userEntry">
-      <div className="entryTitle">
-        <IonLabel className="entriesUserName">
+      <IonCard className="userPost">
+      <div className="postTitle">
+        <IonLabel className="postsUserName">
           DreamMaChInE
         </IonLabel>
         <div className="emoji"> 🧐</div>

@@ -1,19 +1,19 @@
 import React from 'react'
-import { IonCard, IonText, IonCardContent, IonLabel, IonToggle} from '@ionic/react'
+import { IonCard, IonText} from '@ionic/react'
 import Header from '../Header/Header'
-import './userEntry.css'
+import './userPost.css'
 
 
-export default function UserEntry() {
+export default function UserPost() {
   return (
     <>
     <Header />
-    <div className="userEntry">
-      <IonCard className="userEntry">
-      <div className="entryTitle">
-        <div className="entryBar">
-        <div className="emoji"> <i class="fas fa-cloud-rain"></i></div>
-        <div className="entryDreamTitle">
+    <div className="userPost">
+      <IonCard className="userPost">
+      <div className="postTitle">
+        <div className="postBar">
+        <div className="emoji"> <i className="fas fa-cloud-rain"></i></div>
+        <div className="postDreamTitle">
           DREAAMMM TIITTTTLLLEE
         </div>
           <div className="date">11/11/11</div>
@@ -33,7 +33,7 @@ export default function UserEntry() {
             
           </IonText>
         </div>
-        <div className='entryPrivateRow'>
+        <div className='postPrivateRow'>
         </div>
       </IonCard>
       </div>

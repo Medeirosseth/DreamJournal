@@ -13,7 +13,7 @@ export default function Settings() {
         <span className="cloudSettings">
         Settings
           </span>
-        <i class="fas fa-cloud cloud"></i>
+        <i className="fas fa-cloud cloud"></i>
       </div>
         <form>
           <div className='settingsFormRow1'>
