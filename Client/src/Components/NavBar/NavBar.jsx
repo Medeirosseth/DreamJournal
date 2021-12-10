@@ -10,13 +10,13 @@ export default function NavBar() {
   return (
     <div className="navBar">
       <div className="home">
-        <Link to="/">HOME</Link>
+        <Link className="link" to="/">HOME</Link>
       </div>
       <div className="entries">
-        <Link to="/write">WRITE</Link>
+        <Link className="link" to="/write">WRITE</Link>
       </div>
       <div className="dictionary"> 
-        <Link to="/">HOME</Link>
+        <Link className="link" to="/post/">DREAMS</Link>
       </div>
       <div className="settings"><IonBadge color="primary"></IonBadge> </div>
     </div>

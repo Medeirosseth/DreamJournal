@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { IonCard, IonCardSubtitle, IonLabel, IonInput, IonItemDivider, IonButton  } from '@ionic/react'
 import './register.css'
+import { Link } from 'react-router-dom';
 
 export default function Register() {
   // const [userName, setUserName] = useState("")
@@ -41,7 +42,9 @@ export default function Register() {
           />
         <button className="registerButton">Register</button>
       </form>
+      <Link to="login">
         <button className="registerLoginButton">Login</button>
+      </Link>
     </div>
   )
 }

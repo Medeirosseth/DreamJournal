@@ -2,11 +2,13 @@ import React from 'react'
 import { IonCard, IonText} from '@ionic/react'
 import { Link } from 'react-router-dom'
 import './userPost.css'
+import Header from '../Header/Header'
 
 
 export default function UserPost({ post }) {
   return (
     <>
+    <Header/>
     <div className="userPost">
       <IonCard className="userPost">
       <div className="postTitle">

@@ -25,7 +25,7 @@ function App() {
   fetchPosts()
   },[])
 
-  const user = true;
+  const user = false;
 
   return (
     <Router> 
@@ -39,6 +39,9 @@ function App() {
           <Route path="/write"> {user ? <PostForm/> : <Register />} </Route>
           <Route path="/settings"> {user ? <Settings/> : <Register />} </Route>
           <Route path="/post/:postId">
+            <UserPost/>
+          </Route>
+          <Route path="/post">
             <UserPost/>
           </Route>
         </Switch>
