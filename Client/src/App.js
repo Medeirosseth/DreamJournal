@@ -2,7 +2,7 @@ import React, {useState, useEffect, Fragment} from 'react'
 import { IonApp } from "@ionic/react";
 import Register from "./Pages/Register/Register";
 import Login from './Pages/Login/Login';
-import Home from "./Components/HomeScreen/Home";
+import Home from "./Pages/HomeScreen/Home";
 import Posts from "./Components/Posts/Posts";
 import PostForm from './Pages/postForm/PostForm';
 import Settings from './Components/Settings/Settings';
@@ -25,24 +25,11 @@ function App() {
   fetchPosts()
   },[])
 
-  const user = true
+  const user = false
 
   return (
     <IonApp >
-      <Router>
-        <Switch>
-          {/* <> */}
-            <Route exact path="/"><Home /></Route>
-            <Route path="/register">{user ? <Home /> : <Register />}</Route>
-            <Route path="/login">{user ? <Home /> : <Login />}</Route>
-            <Route path="/write">{user ? <PostForm /> : <Register />}</Route>
-            <Route path="/settings">{user ? <Settings /> : <Register />}</Route>
-            <Route path="/post/:postId">
-              <UserPost />
-            </Route>
-          {/* </>   */}
-        </Switch>
-      </Router>
+      <Login />
     </IonApp>
   );
 }

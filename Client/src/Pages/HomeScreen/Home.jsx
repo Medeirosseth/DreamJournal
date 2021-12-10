@@ -1,13 +1,16 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { IonCard, IonCardContent, IonInput, IonAvatar } from '@ionic/react'
 import './home.css'
+import axios from 'axios'
 
 export default function Home() {
+
+
   return (
     <>
     <div className="header">
       <div className="left"><i className="fas fa-plus add"></i> </div>
-      <div className="center"><i className="fas fa-cloud cloud"></i></div>
+      <div className="center"><i className="fas fa-cloud homeCloud"></i></div>
       <IonAvatar className="right">
         <img className="navImage" src='https://www.itsecurityguru.org/wp-content/uploads/2016/01/cloudman.jpg' alt="user profile" />
       </IonAvatar>

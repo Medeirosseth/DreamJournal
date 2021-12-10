@@ -6,6 +6,10 @@
   background-color: rgb(181, 192, 206);
 }
 
+.homeCloud{
+  font-size: 23px;
+
+}
 
 
 .userPic {
@@ -41,7 +45,7 @@
   align-items: center;
 }
 
-.entries {
+.posts {
   flex: 3;
   display: flex;
   justify-content: center;
