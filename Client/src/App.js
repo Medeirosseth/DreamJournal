@@ -27,7 +27,7 @@ function App() {
   },[])
 
   const user = true;
-  // NEED TO MAKE A SINGLE POST VIEW !?s
+  // NEED TO MAKE A SINGLE POST
   return (
     <Router> 
       <IonApp >

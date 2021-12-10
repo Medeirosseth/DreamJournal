@@ -1,0 +1,46 @@
+.singlePost{
+  display: flex;
+}
+
+.singlePostWrapper{
+  padding-bottom: 20px;
+  padding-right: 0px;
+}
+
+.singlePostTitle{
+  text-align: center;
+  margin: 10px;
+  font-size: 20px
+}
+
+.editContainer{
+  float: right;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.singlePostIcon{
+  margin-left: 5px;
+}
+
+.singlePostDate{
+  font-weight: bolder ;
+}
+
+.singlePostDescription{
+  font-size: 20px;
+}
+
+.singlePostDescription::first-letter{
+  margin-left: 20px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.singlePostInfo{
+  margin-bottom: 20px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+}

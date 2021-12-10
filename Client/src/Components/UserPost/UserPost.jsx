@@ -13,11 +13,11 @@ export default function UserPost({ post }) {
       <div className="postTitle">
         <div className="postBar">
           <Link to={`/posts/${post._id}`}>
-            <div className="emoji"> <i className="fas fa-cloud-rain"></i></div>
-            <div className="postDreamTitle">
-              {post.title}
-            </div>
+          <div className="postDreamTitle">
+          {post.title}
+          </div>
           </Link>
+          <div className="emoji"> <i className="fas fa-cloud-rain"></i></div>
           <div className="date">{new Date(post.createdAt).toDateString()}</div>
           <div className="delete"><i className="fas fa-times"></i></div>
           </div>
