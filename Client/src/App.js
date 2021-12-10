@@ -1,11 +1,17 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, Fragment} from 'react'
 import { IonApp } from "@ionic/react";
 import Register from "./Pages/Register/Register";
+import Login from './Pages/Login/Login';
 import Home from "./Components/HomeScreen/Home";
-import Posts from "./Posts/Posts";
+import Posts from "./Components/Posts/Posts";
 import PostForm from './Pages/postForm/PostForm';
+import Settings from './Components/Settings/Settings';
+
+import FeedbackForm from './Pages/FeedbackForm/FeedbackForm';
+import { BrowserRouter as Router, Routes, Switch, Route, Link} from "react-router-dom";
 
  import axios from 'axios'
+import UserPost from './Components/UserPost/UserPost';
 
 function App() {
   const [posts, setPosts] = useState([])
@@ -14,18 +20,52 @@ function App() {
     const fetchPosts = async ()=>{
     const res = await axios.get("/posts")
     setPosts(res.data)
+    console.log(res.data)
   }
   fetchPosts()
   },[])
 
+  const user = true
+
   return (
-  <IonApp >
-    <Register />
-    <Home />
-    <Posts posts={posts}/>
-    <PostForm />
-  </IonApp>
+    <IonApp >
+      <Router>
+        <Switch>
+          {/* <> */}
+            <Route exact path="/"><Home /></Route>
+            <Route path="/register">{user ? <Home /> : <Register />}</Route>
+            <Route path="/login">{user ? <Home /> : <Login />}</Route>
+            <Route path="/write">{user ? <PostForm /> : <Register />}</Route>
+            <Route path="/settings">{user ? <Settings /> : <Register />}</Route>
+            <Route path="/post/:postId">
+              <UserPost />
+            </Route>
+          {/* </>   */}
+        </Switch>
+      </Router>
+    </IonApp>
   );
 }
 
 export default App;
+
+
+
+
+
+{/* <Router>
+    <Fragment>
+      <Routes>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        {/* <Route  path="/register">
+          <Register />
+        </Route>
+        <Route  path="/login">
+          <Login />
+        </Route>
+        <Route  path="/write">
+          <PostForm />
+        </Route>
+        <Posts posts={posts}/> */}
