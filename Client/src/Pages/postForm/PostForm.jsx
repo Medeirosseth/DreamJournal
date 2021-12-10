@@ -2,10 +2,12 @@ import React from 'react'
 import { IonButton, IonTextarea, IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonInput, IonItem, IonLabel, IonList, IonItemDivider, IonToggle, IonCard } from '@ionic/react';
 
 import './postForm.css';
+import Header from '../../Components/Header/Header';
 
 export default function PostForm() {
   return (
     <>
+    <Header />
     <IonCard>
       <form className='postForm'>
         <IonInput className='postTitle' placeholder= "I could Fly" spellcheck='true' required >

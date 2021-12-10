@@ -25,12 +25,25 @@ function App() {
   fetchPosts()
   },[])
 
-  const user = false
+  const user = true;
 
   return (
-    <IonApp >
-      <Register />
-    </IonApp>
+    <Router> 
+      <IonApp >
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/register"> {user ? <Home/> : <Register />} </Route>
+          <Route path="/login"> {user ? <Home/> : <Login />} </Route>
+          <Route path="/write"> {user ? <PostForm/> : <Register />} </Route>
+          <Route path="/settings"> {user ? <Settings/> : <Register />} </Route>
+          <Route path="/post/:postId">
+            <UserPost/>
+          </Route>
+        </Switch>
+      </IonApp>
+    </Router>
   );
 }
 
