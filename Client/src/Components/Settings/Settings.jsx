@@ -7,7 +7,6 @@ import './settings.css';
 export default function Settings() {
   return (
     <>
-    <Header />
     <div className='settingsContainer'>
       <div className="cloudContainer">
         <span className="cloudSettings">

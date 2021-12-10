@@ -7,7 +7,6 @@ import UserPost from '../UserPost/UserPost'
 export default function Posts({ posts }) {
   return (
     <>
-    <Header />
     <div className="Posts">
       {posts.map((p) => (
         <UserPost post={p} />

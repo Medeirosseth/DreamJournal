@@ -7,7 +7,6 @@ import Header from '../../Components/Header/Header';
 export default function PostForm() {
   return (
     <>
-    <Header />
     <IonCard>
       <form className='postForm'>
         <IonInput className='postTitle' placeholder= "I could Fly" spellcheck='true' required >

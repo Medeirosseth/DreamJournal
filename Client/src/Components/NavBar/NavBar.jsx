@@ -16,7 +16,7 @@ export default function NavBar() {
         <Link className="link" to="/write">WRITE</Link>
       </div>
       <div className="dictionary"> 
-        <Link className="link" to="/post/">DREAMS</Link>
+        <Link className="link" to="/posts">DREAMS</Link>
       </div>
       <div className="settings"><IonBadge color="primary"></IonBadge> </div>
     </div>

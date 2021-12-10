@@ -9,7 +9,6 @@ export default function Home() {
 
   return (
     <>
-      <Header />
     <IonCard className="homePage">
       <IonCardContent className="welcome"> Welcome Seth </IonCardContent>
       <div className="profilePhoto">

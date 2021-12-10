@@ -6,6 +6,7 @@ import Home from "./Pages/HomeScreen/Home";
 import Posts from "./Components/Posts/Posts";
 import PostForm from './Pages/postForm/PostForm';
 import Settings from './Components/Settings/Settings';
+import Header from './Components/Header/Header';
 
 import FeedbackForm from './Pages/FeedbackForm/FeedbackForm';
 import { BrowserRouter as Router, Routes, Switch, Route, Link} from "react-router-dom";
@@ -25,11 +26,12 @@ function App() {
   fetchPosts()
   },[])
 
-  const user = false;
+  const user = true;
 
   return (
     <Router> 
       <IonApp >
+        <Header />
         <Switch>
           <Route exact path="/">
             <Home />
@@ -38,8 +40,8 @@ function App() {
           <Route path="/login"> {user ? <Home/> : <Login />} </Route>
           <Route path="/write"> {user ? <PostForm/> : <Register />} </Route>
           <Route path="/settings"> {user ? <Settings/> : <Register />} </Route>
-          <Route path="/post/:postId">
-            <UserPost/>
+          <Route path="/posts">
+            <Posts posts={posts}/>
           </Route>
           <Route path="/post">
             <UserPost/>
