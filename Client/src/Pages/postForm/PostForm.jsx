@@ -23,9 +23,13 @@ export default function PostForm() {
             <span id='Happy'><i className="fas fa-sun dreamCategories"></i></span>
             </div>
           <div className='privateRow'>
-            <IonLabel>Private</IonLabel>
+            <IonLabel>
+              <i class="fas fa-eye privacyToggle"></i>
+            </IonLabel>
             <IonToggle />
-            <IonLabel>Public</IonLabel>
+            <IonLabel>
+              <i class="far fa-eye-slash privacyToggle"></i>
+            </IonLabel>
           </div>
           <IonButton>Post</IonButton>
         </form>

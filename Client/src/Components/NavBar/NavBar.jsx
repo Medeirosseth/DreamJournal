@@ -11,7 +11,7 @@ export default function NavBar() {
     <div className="navBar">
       <div className="home">
         <Link className="link" to="/">
-          <i class="fas fa-home navIcon"></i>
+          <i class="fas fa-shapes navIcon"></i>
         </Link>
       </div>
       <div className="entries">
