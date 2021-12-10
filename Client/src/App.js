@@ -29,7 +29,7 @@ function App() {
 
   return (
     <IonApp >
-      <Login />
+      <Register />
     </IonApp>
   );
 }

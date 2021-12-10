@@ -1,31 +1,56 @@
-.registerLabel {
+.register{
+  height: 101vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  background: url("https://static.independent.co.uk/2021/07/19/16/newFile-10.jpg?width=1200&auto=webp&quality=75'alt='dr.eam");
+  background-position: center;
 }
 
-.registerLogo{
-  margin: 20px 0 0 30px;
-  height: 350px;
-  width: 350px;
-  border-radius: 50%;
+.registerLabel{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
 }
 
-.registerImgContainer {
-  margin-right: 30px;
-  position: relative;
+.registerTitle{
+  color: white;
+  font-size: 50px;
 }
 
-.registerIMGText {
+.registerForm{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.registerForm > label {
+  margin: 10px 0;
+}
+
+.registerInput{
+  padding: 10px;
+  background-color: white;
+  border: none;
+}
+
+.registerButton{
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: rgb(232, 241, 245);
+  border: none;
+  border-radius: 20px;
+  height: 30px;
+  padding: 10px;
+}
+
+.registerLoginButton{
   position: absolute;
-  margin-left: 150px;
-  font-size: 30px;
-  color:rgb(250, 250, 250);
-  z-index: 2;
-  margin-top: 300px;
-
-}
-
-.registerContainer{
-  margin-top: 25px;
+  bottom: 60px;
+  border: none;
+  background-color: black;
+  color: white;
 }

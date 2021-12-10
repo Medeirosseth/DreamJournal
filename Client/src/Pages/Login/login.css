@@ -8,6 +8,13 @@
   background-position: center;
 }
 
+.label{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+}
 
 .loginTitle{
   color: white;
@@ -47,62 +54,3 @@
   background-color: black;
   color: white;
 }
-
-/* 
-.container {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-margin-top: 10%;
-}
-
-.loginImgContainer{
-  display: flex;
-}
-
-.logoContainer{
-  position: relative
-}
-
-.loginText{
-  color: white;
-  font-size: 30px;
-  position: absolute;
-  margin-left: 160px;
-  margin-top: 270px;
-  z-index: 2;
-}
-
-
-.loginLogo{
-  margin: 10px 0 0 30px;
-  height: 350px;
-  width: 350px;
-  border-radius: 50%;
-}
-
-.container > .username {
-  height: 40px;
-} */
-
-/* .password{
-
-}  */
-
-/* .login {
-  display: flex;
-   */
-/* } */
-
-/* Login button needs to be bigger and center
-while the register button is underneath, smaller, and centered
-
-
-/* loginButton {
-  float: left
-}
-
-.register{
-  float: right;
-} */
