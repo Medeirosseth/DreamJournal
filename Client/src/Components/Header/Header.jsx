@@ -12,7 +12,11 @@ export default function Header() {
   return (
     <>
       <div className="header">
-        <div className="left"><i className="fas fa-plus add"></i> </div>
+        <div className="left">
+          <Link className="link" to="/write">
+            <i className="fas fa-plus add"></i> 
+          </Link>
+        </div>
         <div className="center"><i className="fas fa-cloud"></i></div>
         <IonAvatar className="right">
           {

@@ -27,7 +27,7 @@ function App() {
   },[])
 
   const user = true;
-
+  // NEED TO MAKE A SINGLE POST VIEW !?s
   return (
     <Router> 
       <IonApp >
@@ -43,7 +43,7 @@ function App() {
           <Route path="/posts">
             <Posts posts={posts}/>
           </Route>
-          <Route path="/post">
+          <Route path="/posts/">
             <UserPost/>
           </Route>
         </Switch>

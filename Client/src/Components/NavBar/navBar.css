@@ -4,6 +4,16 @@
   background-color: rgb(249, 247, 245);
 }
 
+.navIcon{
+  color: black;
+  font-size: 20px;
+}
+
+.navIcon:hover {
+  font-size: 25px;
+}
+
+
 .home {
   flex: 3;
   display: flex;
