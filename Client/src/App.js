@@ -17,7 +17,7 @@ import SinglePost from './Components/SinglePost/SinglePost';
 
 function App() {
 
-  const user = true;
+  const user = false;
   // NEED TO MAKE A SINGLE POST
   return (
     <Router> 

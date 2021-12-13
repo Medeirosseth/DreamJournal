@@ -12,7 +12,7 @@ export default function UserPost({ post }) {
       <IonCard className="userPost">
       <div className="postTitle">
         <div className="postBar">
-          <Link to={`/post/${post._id}`}>
+          <Link className="link" to={`/post/${post._id}`}>
           <div className="postDreamTitle">
           {post.title}
           </div>

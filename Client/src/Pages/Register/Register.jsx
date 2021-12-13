@@ -2,49 +2,61 @@ import React, { useState } from 'react'
 import { IonCard, IonCardSubtitle, IonLabel, IonInput, IonItemDivider, IonButton  } from '@ionic/react'
 import './register.css'
 import { Link } from 'react-router-dom';
+import axios from 'axios'
 
 export default function Register() {
-  // const [userName, setUserName] = useState("")
-  // const [email, setEmail] = useState("")
-  // const [userPassword, setPassword] = useState("")
+  const [username, setUserName] = useState("")
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
+  const [error, setError] = useState(false)
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // const res = axios.post("/auth/register", {
-    //   username, 
-    //   email, 
-    //   password,
-    // });
-    //   console.log(res)
+    setError(false)
+    try{
+
+    const res = await axios.post("/auth/register", {
+      username, 
+      email, 
+      password, 
+    });
+    res.data && window.location.replace("/login")
+  } catch (err) {
+    setError(err)
+  }
   }
 
   return (
     <div className="register">
       <span className="registerTitle">REGISTER</span>
-      <form className="registerForm">
+      <form className="registerForm" onSubmit={handleSubmit}>
         <label className="registerLabel">Username</label>
         <input 
           type="text" 
           className="registerInput" 
           placeholder="userName" 
+          onChange={e => setUserName(e.target.value)}
         />
         <label className="registerLabel" >Email</label>
         <input 
           type="text" 
           className="registerInput" 
           placeholder="Email" 
+          onChange={e => setEmail(e.target.value)}
         />
         <label className="registerLabel" > Password</label>
         <input 
           type="text" 
             className="registerInput" 
             placeholder="Password" 
+            onChange={e => setPassword(e.target.value)}
           />
-        <button className="registerButton">Register</button>
+        <button className="registerButton" type="submit">Register</button>
       </form>
       <Link to="login">
         <button className="registerLoginButton">Login</button>
       </Link>
+      { error && <span className="error">Something went wrong <i class="fas fa-sad-tear"></i></span>}
     </div>
   )
 }

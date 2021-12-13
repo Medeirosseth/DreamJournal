@@ -18,6 +18,7 @@ export default function SinglePost() {
     }; 
     getPost()
   }, [path]);
+
   return (
     <>
     <Header />
@@ -32,10 +33,10 @@ export default function SinglePost() {
         </h1>
         <div className="singlePostInfo">
           <span className="singlePostAuthor"><b>{post.username}</b></span>
-          <span className="singlePostDate"> {post.desc}</span>
+          <span className="singlePostDate">{new Date(post.createdAt).toDateString()} </span>
         </div>
         <p className="singlePostDescription">
-          
+          {post.desc}
         </p>
       </div>
     </div>
