@@ -1,5 +1,5 @@
 import React from 'react'
-import { IonBadge } from '@ionic/react'
+import { IonBadge, IonNav } from '@ionic/react'
 import './navBar.css'
 import { Link } from 'react-router-dom'
 
@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 // Logout / settings / dreams / write / entries 
 export default function NavBar() {
   return (
-    <div className="navBar">
+    <IonNav className="navBar">
       <div className="home">
         <Link className="link" to="/">
           <i class="fas fa-shapes navIcon"></i>
@@ -25,6 +25,6 @@ export default function NavBar() {
         </Link>
       </div>
       <div className="settings"><IonBadge color="primary"></IonBadge> </div>
-    </div>
+    </IonNav>
   )
 }

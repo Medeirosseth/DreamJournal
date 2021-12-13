@@ -1,12 +1,13 @@
 import React from 'react';
 import { IonBadge, IonLabel, IonCard, IonInput, IonButton } from '@ionic/react';
-import Header from '../Header/Header';
+import Header from '../../Components/Header/Header';
 
 import './settings.css';
 
 export default function Settings() {
   return (
     <>
+    <Header />
     <div className='settingsContainer'>
       <div className="cloudContainer">
         <span className="cloudSettings">

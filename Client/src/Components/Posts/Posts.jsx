@@ -3,6 +3,7 @@ import Header from '../Header/Header'
 import React from 'react'
 import "./posts.css"
 import UserPost from '../UserPost/UserPost'
+import SinglePost from '../SinglePost/SinglePost'
 
 export default function Posts({ posts }) {
   return (

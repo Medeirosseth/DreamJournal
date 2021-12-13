@@ -7,6 +7,7 @@ import Header from '../../Components/Header/Header';
 export default function PostForm() {
   return (
     <>
+    <Header />
     <div className="PostForm"> 
       <IonCard>
         <form className='postForm'>
@@ -31,7 +32,7 @@ export default function PostForm() {
               <i class="far fa-eye-slash privacyToggle"></i>
             </IonLabel>
           </div>
-          <IonButton>Post</IonButton>
+          <IonButton className="postFormButton">BUTTON</IonButton>
         </form>
       </IonCard> 
     </div>

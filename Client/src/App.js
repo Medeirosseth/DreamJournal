@@ -5,7 +5,7 @@ import Login from './Pages/Login/Login';
 import Home from "./Pages/HomeScreen/Home";
 import Posts from "./Components/Posts/Posts";
 import PostForm from './Pages/postForm/PostForm';
-import Settings from './Components/Settings/Settings';
+import Settings from './Pages/Settings/Settings';
 import Header from './Components/Header/Header';
 
 import FeedbackForm from './Pages/FeedbackForm/FeedbackForm';
@@ -13,25 +13,15 @@ import { BrowserRouter as Router, Routes, Switch, Route, Link} from "react-route
 
  import axios from 'axios'
 import UserPost from './Components/UserPost/UserPost';
+import SinglePost from './Components/SinglePost/SinglePost';
 
 function App() {
-  const [posts, setPosts] = useState([])
-  
-  useEffect(() => {
-    const fetchPosts = async ()=>{
-    const res = await axios.get("/posts")
-    setPosts(res.data)
-    console.log(res.data)
-  }
-  fetchPosts()
-  },[])
 
   const user = true;
   // NEED TO MAKE A SINGLE POST
   return (
     <Router> 
       <IonApp >
-        <Header />
         <Switch>
           <Route exact path="/">
             <Home />
@@ -40,11 +30,8 @@ function App() {
           <Route path="/login"> {user ? <Home/> : <Login />} </Route>
           <Route path="/write"> {user ? <PostForm/> : <Register />} </Route>
           <Route path="/settings"> {user ? <Settings/> : <Register />} </Route>
-          <Route path="/posts">
-            <Posts posts={posts}/>
-          </Route>
-          <Route path="/posts/">
-            <UserPost/>
+          <Route path="/post/:id">
+            <SinglePost />
           </Route>
         </Switch>
       </IonApp>
