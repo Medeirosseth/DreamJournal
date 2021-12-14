@@ -20,7 +20,7 @@
 .postText {
   align-items: center;
   justify-content: space-around; 
-  width: 80vh;
+  
 } 
 
 .dreamCategories{
@@ -43,7 +43,7 @@
   
 }
 
-.privacyToggle{
+/* .privacyToggle{
   font-size: 20px;
 }
 ion-toggle {
@@ -52,7 +52,7 @@ ion-toggle {
 
   --handle-background: #d1dde4;
   --handle-background-checked: #d1dde4;
-}
+} */
 ion-label {
   font-weight: bold;
   margin-left: 5px;

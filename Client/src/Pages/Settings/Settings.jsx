@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { IonBadge, IonLabel, IonCard, IonInput, IonButton } from '@ionic/react';
 import Header from '../../Components/Header/Header';
-
+import { Context } from '../../Context/Context';
 import './settings.css';
 
+
+
 export default function Settings() {
+  const { user, dispatch } = useContext(Context)
+
+  const handleLogout = () => {
+    dispatch({type: "LOGOUT"})
+  };
+  
   return (
     <>
     <Header />
@@ -39,7 +47,7 @@ export default function Settings() {
           <IonButton className='saveChangesButton'>Save changes</IonButton>
         </form>
         <div className="settingsButton">
-          <IonButton className='logOutButton'>Logout</IonButton>
+          <IonButton className='logOutButton' onClick={handleLogout}>logout</IonButton>
           <IonButton className='feedBackButton'>Feedback</IonButton>
         </div>
     </div>

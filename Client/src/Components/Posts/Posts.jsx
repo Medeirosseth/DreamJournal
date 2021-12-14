@@ -3,6 +3,7 @@ import Header from '../Header/Header'
 import React from 'react'
 import "./posts.css"
 import UserPost from '../UserPost/UserPost'
+import Footer from '../Footer/Footer'
 import SinglePost from '../SinglePost/SinglePost'
 
 export default function Posts({ posts }) {
@@ -12,6 +13,7 @@ export default function Posts({ posts }) {
       {posts.map((p) => (
         <UserPost post={p} />
       ))}
+      <Footer />
     </div>
     
     

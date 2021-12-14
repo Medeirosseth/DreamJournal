@@ -1,0 +1,16 @@
+.footer{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.footerCategories{
+  font-size: 30px;
+  margin-left: 18px;
+  cursor: pointer;
+}
+
+.footerCategories:hover{
+  font-size: 40px;
+  color: rgb(96, 118, 174);
+}

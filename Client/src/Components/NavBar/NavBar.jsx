@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 //Figure out what is necessary for nav bar 
 // Logout / settings / dreams / write / entries 
 export default function NavBar() {
+  
   return (
     <IonNav className="navBar">
       <div className="home">
@@ -20,8 +21,8 @@ export default function NavBar() {
         </Link>
       </div>
       <div className="dictionary"> 
-        <Link className="link" to="/posts">
-          <i class="far fa-newspaper navIcon"></i>
+        <Link className="link" to="/">
+          <i class="fas fa-sign-out-alt navIcon"></i>
         </Link>
       </div>
       <div className="settings"><IonBadge color="primary"></IonBadge> </div>

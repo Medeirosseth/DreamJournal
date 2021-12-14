@@ -9,14 +9,14 @@ export default function Login() {
 
   const userRef = useRef();
   const passwordRef = useRef();
-  const { user, dispatch, isFetching} = useContext(Context)
+  const { dispatch, isFetching} = useContext(Context)
 
 
   const handleSubmit = async (e)=> {
     e.preventDefault()
     dispatch({type:"LOGIN_START"});
     try{
-      const res = await axios("auth/login", {
+      const res = await axios.post("auth/login", {
         username: userRef.current.value,
         password: passwordRef.current.value
       })
@@ -26,16 +26,25 @@ export default function Login() {
     }
   }
   
-  console.log(user)
   return (
     <div className="login">
       <span className="loginTitle">LOGIN</span>
       <form className="loginForm"  onSubmit={handleSubmit}>
         <label>username</label>
-        <input type="text" className="loginInput" placeholder="Enter your username" ref={userRef} />
+        <input 
+          type="text" 
+          className="loginInput" 
+          placeholder="Enter your username" 
+          ref={userRef} 
+        />
         <label > Password</label>
-        <input type="text" className="loginInput" placeholder="Password" ref={passwordRef}/>
-        <button className="loginButton" type="submit">Login</button>
+        <input 
+          type="text" 
+          className="loginInput" 
+          placeholder="Password" 
+          ref={passwordRef}
+        />
+        <button className="loginButton" type="submit" disabled={isFetching}>Login</button>
       </form>
       <Link to="/register"> 
         <button className="loginRegisterButton">Register</button>

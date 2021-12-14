@@ -8,6 +8,7 @@
 }
 
 .singlePostTitle{
+  border: 1px;
   text-align: center;
   margin: 10px;
   font-size: 20px
@@ -26,10 +27,13 @@
 
 .singlePostDate{
   font-weight: bolder ;
+  padding-right: 50px;
 }
 
 .singlePostDescription{
   font-size: 20px;
+  padding-left: 15px;
+  padding-right: 10px;
 }
 
 .singlePostDescription::first-letter{

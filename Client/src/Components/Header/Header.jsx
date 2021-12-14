@@ -1,14 +1,16 @@
 import { IonAvatar } from '@ionic/react'
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import NavBar from '../NavBar/NavBar'
+import { Context } from '../../Context/Context'
 import './header.css'
 
-let user = true
+
 
 //IS having the ternary for user avatar necessary?
 
 export default function Header() {
+  const { user } = useContext((Context));
   return (
     <>
       <div className="header">
