@@ -8,29 +8,24 @@ import Header from '../Header/Header'
 export default function UserPost({ post }) {
   return (
     <>
-      <div className="userPost">
       <IonCard className="userPost">
-      <div className="postTitle">
-        <div className="postBar">
-          <Link className="link" to={`/post/${post._id}`}>
-          <div className="postDreamTitle">
-          {post.title}
+        <div className="postTitle">
+          <div className="postBar">
+            <Link className="link" to={`/post/${post._id}`}>
+              <div className="postDreamTitle">
+                {post.title}
+              </div>
+            </Link>
+            <div className="emoji"> <i className="fas fa-cloud-rain"></i></div>
+            <div className="date">{new Date(post.createdAt).toDateString()}</div>
           </div>
-          </Link>
-          <div className="emoji"> <i className="fas fa-cloud-rain"></i></div>
-          <div className="date">{new Date(post.createdAt).toDateString()}</div>
-          <div className="delete"><i className="fas fa-times"></i></div>
+        </div>
+          <div className="postDescription"> 
+            <IonText >
+              {post.desc}
+            </IonText>
           </div>
-        </div>
-        <div className="postDescription"> 
-          <IonText >
-            {post.desc}
-          </IonText>
-        </div>
-        <div className='postPrivateRow'>
-        </div>
       </IonCard>
-      </div>
     </>
   )
 }

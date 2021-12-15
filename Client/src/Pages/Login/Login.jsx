@@ -30,14 +30,12 @@ export default function Login() {
     <div className="login">
       <span className="loginTitle">LOGIN</span>
       <form className="loginForm"  onSubmit={handleSubmit}>
-        <label>username</label>
         <input 
           type="text" 
           className="loginInput" 
           placeholder="Enter your username" 
           ref={userRef} 
         />
-        <label > Password</label>
         <input 
           type="text" 
           className="loginInput" 
@@ -46,9 +44,11 @@ export default function Login() {
         />
         <button className="loginButton" type="submit" disabled={isFetching}>Login</button>
       </form>
-      <Link to="/register"> 
-        <button className="loginRegisterButton">Register</button>
-      </Link>
+      <div className="loginRegisterWrapper" >
+        <Link to="/register"> 
+          <button className="loginRegisterButton">Register</button>
+        </Link>
+      </div>
     </div>
     )
   }

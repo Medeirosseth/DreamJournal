@@ -30,21 +30,19 @@ export default function Register() {
     <div className="register">
       <span className="registerTitle">REGISTER</span>
       <form className="registerForm" onSubmit={handleSubmit}>
-        <label className="registerLabel">Username</label>
         <input 
           type="text" 
           className="registerInput" 
           placeholder="userName" 
           onChange={e => setUserName(e.target.value)}
         />
-        <label className="registerLabel" >Email</label>
         <input 
           type="text" 
           className="registerInput" 
           placeholder="Email" 
           onChange={e => setEmail(e.target.value)}
         />
-        <label className="registerLabel" > Password</label>
+    
         <input 
           type="text" 
             className="registerInput" 
@@ -53,9 +51,11 @@ export default function Register() {
           />
         <button className="registerButton" type="submit">Register</button>
       </form>
-      <Link to="login">
-        <button className="registerLoginButton">Login</button>
-      </Link>
+      <div className="registerLoginWrapper">
+        <Link to="login">
+          <button className="registerLoginButton">Login</button>
+        </Link>
+      </div>
       { error && <span className="error">Something went wrong <i class="fas fa-sad-tear"></i></span>}
     </div>
   )

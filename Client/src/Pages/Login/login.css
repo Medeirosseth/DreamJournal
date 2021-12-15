@@ -35,6 +35,8 @@
   padding: 10px;
   background-color: white;
   border: none;
+  margin-top: 10px;
+  border-radius: 20px;
 }
 
 .loginButton{
@@ -53,9 +55,10 @@
 }
 
 .loginRegisterButton{
-  position: absolute;
+  /* position: absolute; */
   bottom: 60px;
   border: none;
   background-color: black;
   color: white;
 }
+

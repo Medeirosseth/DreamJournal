@@ -6,6 +6,7 @@
   justify-content: center;
   background: url("https://static.independent.co.uk/2021/07/19/16/newFile-10.jpg?width=1200&auto=webp&quality=75'alt='dr.eam");
   background-position: center;
+  margin-bottom: 30px;
 }
 
 .registerLabel{
@@ -33,7 +34,9 @@
 
 .registerInput{
   padding: 10px;
+  margin-top: 10px;
   background-color: white;
+  border-radius: 20px;
   border: none;
 }
 
@@ -48,13 +51,22 @@
 }
 
 .registerLoginButton{
-  position: absolute;
+  /* position: absolute; */
   bottom: 60px;
   border: none;
-  background-color: black;
+  background: none;
   color: white;
+  /* padding-top: 20px; */
 }
 
+.registerLoginWrapper{
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+  width:100px;
+  height:50px;
+  /* background-color: red; */
+}
 .error{
   color: white;
 }

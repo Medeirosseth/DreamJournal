@@ -21,8 +21,8 @@ export default function NavBar() {
         </Link>
       </div>
       <div className="dictionary"> 
-        <Link className="link" to="/">
-          <i class="fas fa-sign-out-alt navIcon"></i>
+        <Link className="link" to="/settings">
+          <i class="fas fa-cogs navIcon"></i>
         </Link>
       </div>
       <div className="settings"><IonBadge color="primary"></IonBadge> </div>
