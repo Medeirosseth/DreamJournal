@@ -1,5 +1,4 @@
 .postForm {
-  background-color: rgb(181, 192, 206);
   height: calc(100vh - 70px);
   display: flex;
   flex-direction: column;
@@ -12,10 +11,6 @@
   
 }
 .postTitle {
-  margin-top: 5%;
-  /* align-items: center;
-  justify-content: space-around; */
-  /* width: 80vh; */
 }
 .postText {
   align-items: center;
@@ -23,23 +18,20 @@
   
 } 
 
-.dreamCategories{
-  font-size: 30px;
-  margin-left: 15px;
-  padding-bottom: 15px;
-}
-
-
 .privateRow{
   display:flex;
+  height: 60vh;
+  width: 85vw;
   flex-direction:row;
   align-items: center;
   justify-content: center;
-  margin-bottom: 150px;
 }
 
 .postFormButton{
-  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
   
 }
 
@@ -49,12 +41,17 @@
 ion-toggle {
   --background: #e6f6f7;
   --background-checked: #e6f6f7;
-
+  
   --handle-background: #d1dde4;
   --handle-background-checked: #d1dde4;
 } */
-ion-label {
+/* ion-label {
   font-weight: bold;
   margin-left: 5px;
   margin-right: 5px;
-}
+  
+  /* .dreamCategories{
+    font-size: 30px;
+    margin-left: 15px;
+    padding-bottom: 15px;
+  } */

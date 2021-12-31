@@ -16,18 +16,20 @@ export default function UserPost({ post }) {
                 {post.title}
               </div>
             </Link>
-            <div className="emoji"> <i className="fas fa-cloud-rain"></i></div>
             <div className="date">{new Date(post.createdAt).toDateString()}</div>
           </div>
         </div>
-          <div className="postDescription"> 
-            <IonText >
-              {post.desc}
-            </IonText>
-          </div>
+        <div className="postDescription"> 
+          <IonText >
+            {post.desc}
+          </IonText>
+        </div>
       </IonCard>
     </>
   )
 }
 
-
+          // this is for dream category
+          // <div className="emoji"> <i className="fas fa-cloud-rain"></i></div>
+          
+          

@@ -2,9 +2,10 @@
   display: flex;
   flex-direction: column;
   background-color: rgb(249, 247, 245);
+  overflow: scroll;
 }
 
-.postTitle{
+/* .postTitle{
   display: flex;
 }
 
@@ -30,4 +31,4 @@ margin-left: 20px;
 
 .userPost{
 margin-top: 30px;
-}
+} */

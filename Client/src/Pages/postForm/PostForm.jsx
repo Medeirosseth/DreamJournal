@@ -28,6 +28,7 @@ export default function PostForm() {
     <Header />
     <div className="PostForm" onSubmit={handleSubmit}> 
         <form className='postForm'>
+        <IonCard> 
           <IonInput 
             className='postTitle' 
             placeholder= "I could Fly" 
@@ -45,17 +46,19 @@ export default function PostForm() {
             >
             The Dream:
           </IonTextarea>
-          <div className="emojis"> 
-            <span id='Nightmare'><i className="fas fa-book-dead dreamCategories"></i></span>
-            <span id='Sad'><i className="fas fa-cloud-rain dreamCategories"></i></span>
-            <span id='Sexy'><i className="far fa-grin-stars dreamCategories"></i></span>
-            <span id='Happy'><i className="fas fa-sun dreamCategories"></i></span>
-            </div>
           <div className='privateRow'>
           </div>
-          <button className="postFormButton" type="submit">BUTTON</button>
-        </form>
-    </div>
-    </>
-  )
-}
+          <IonButton  className="postFormButton" color="dark" type="submit">SUBMIT</IonButton>
+          </IonCard>
+            </form>
+          </div>
+        </>
+      )
+    }
+        
+        // <div className="emojis"> 
+        //   <span id='Nightmare'><i className="fas fa-book-dead dreamCategories"></i></span>
+        //   <span id='Sad'><i className="fas fa-cloud-rain dreamCategories"></i></span>
+        //   <span id='Sexy'><i className="far fa-grin-stars dreamCategories"></i></span>
+        //   <span id='Happy'><i className="fas fa-sun dreamCategories"></i></span>
+        //   </div>

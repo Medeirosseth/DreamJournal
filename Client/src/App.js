@@ -11,7 +11,7 @@ import Footer from './Components/Footer/Footer';
 import FeedbackForm from './Pages/FeedbackForm/FeedbackForm';
 import { BrowserRouter as Router, Routes, Switch, Route, Link} from "react-router-dom";
 import { Context } from './Context/Context';
-
+import NavBar from './Components/NavBar/NavBar';
 import axios from 'axios'
 import UserPost from './Components/UserPost/UserPost';
 import SinglePost from './Components/SinglePost/SinglePost';
@@ -19,46 +19,34 @@ import SinglePost from './Components/SinglePost/SinglePost';
 function App() {
 
   const { user } = useContext(Context);
-  //Figure out how to route home
+  
   return (
     <Router> 
-      <IonApp >
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/register"> {user ? <Home/> : <Register />} </Route>
-          <Route path="/login"> {user ? <Home/> : <Login />} </Route>
-          <Route path="/write"> {user ? <PostForm/> : <Register />} </Route>
-          <Route path="/settings"> {user ? <Settings/> : <Register />} </Route>
-          <Route path="/post/:id">
-            <SinglePost />
-          </Route>
-        </Switch>
-      </IonApp>
+    <NavBar />
+      <PostForm />
     </Router>
-  );
-}
+    );
+  }
+  
+  export default App;
+  
 
-export default App;
+  
 
+  // <Router> 
+  //   <IonApp >
+  //     <Switch>
+  //       <Route exact path="/">
+  //         <Home />
+  //       </Route>
+  //       <Route path="/register"> {user ? <Home/> : <Register />} </Route>
+  //       <Route path="/login"> {user ? <Home/> : <Login />} </Route>
+  //       <Route path="/write"> {user ? <PostForm/> : <Register />} </Route>
+  //       <Route path="/settings"> {user ? <Settings/> : <Register />} </Route>
+  //       <Route path="/post/:id">
+  //         <SinglePost />
+  //       </Route>
+  //     </Switch>
+  //   </IonApp>
+  // </Router>
 
-
-
-
-{/* <Router>
-    <Fragment>
-      <Routes>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        {/* <Route  path="/register">
-          <Register />
-        </Route>
-        <Route  path="/login">
-          <Login />
-        </Route>
-        <Route  path="/write">
-          <PostForm />
-        </Route>
-        <Posts posts={posts}/> */}

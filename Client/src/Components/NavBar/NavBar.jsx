@@ -1,12 +1,16 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import { IonBadge, IonNav } from '@ionic/react'
 import './navBar.css'
 import { Link } from 'react-router-dom'
+import { Context } from '../../Context/Context'
 
 
-//Figure out what is necessary for nav bar 
-// Logout / settings / dreams / write / entries 
 export default function NavBar() {
+  const {user, dispatch} = useContext(Context)
+  
+  const handleLogOut = () => {
+    dispatch({type: "LOGOUT"})
+  }
   
   return (
     <IonNav className="navBar">
@@ -21,11 +25,10 @@ export default function NavBar() {
         </Link>
       </div>
       <div className="dictionary"> 
-        <Link className="link" to="/settings">
-          <i class="fas fa-cogs navIcon"></i>
-        </Link>
+        <i onClick={handleLogOut} class="fas fa-sign-out-alt"></i>
       </div>
       <div className="settings"><IonBadge color="primary"></IonBadge> </div>
-    </IonNav>
-  )
-}
+      </IonNav>
+      )
+    }
+    

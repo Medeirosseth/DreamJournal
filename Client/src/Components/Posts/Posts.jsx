@@ -13,7 +13,6 @@ export default function Posts({ posts }) {
       {posts.map((p) => (
         <UserPost post={p} />
       ))}
-      <Footer />
     </div>
     
     

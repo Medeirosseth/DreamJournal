@@ -15,20 +15,22 @@ export default function Header() {
         <div className="center">
           <i className="fas fa-cloud headerIcon"></i>
         </div>
+        <NavBar />
         <IonAvatar className="right">
           {
             user ? (  
-                <img className="navImage" src="https://www.itsecurityguru.org/wp-content/uploads/2016/01/cloudman.jpg" alt="user profile" />
-            ) : (
-              <>
-              <Link className="link" to="/login">LOGIN</Link>
-              <Link className="link" to="/register">REGISTER</Link>
-              </>
-            )
-          }
+              ""
+              ) : (
+                <>
+                <Link className="link" to="/login">LOGIN</Link>
+                <Link className="link" to="/register">REGISTER</Link>
+                </>
+                )
+              }
         </IonAvatar>
       </div>
-      <NavBar />
     </>
   )
 }
+
+              // <img className="navImage" src="https://www.itsecurityguru.org/wp-content/uploads/2016/01/cloudman.jpg" alt="user profile" />

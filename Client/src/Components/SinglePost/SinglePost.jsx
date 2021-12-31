@@ -39,10 +39,10 @@ export default function SinglePost() {
       <span className="singlePostDate">{new Date(post.createdAt).toDateString()} </span>
       </div>
       <IonCard>
-      <p className="singlePostDescription">
-        {post.desc}
+        <p className="singlePostDescription">
+          {post.desc}
         </p>
-        </IonCard>
+      </IonCard>
       </div>
     </div>
     </>
