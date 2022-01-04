@@ -24,10 +24,9 @@ export default function NavBar() {
           <i class="fas fa-pen-square navIcon"></i>
         </Link>
       </div>
-      <div className="dictionary"> 
+      <div className="logout"> 
         <i onClick={handleLogOut} class="fas fa-sign-out-alt"></i>
       </div>
-      <div className="settings"><IonBadge color="primary"></IonBadge> </div>
       </IonNav>
       )
     }

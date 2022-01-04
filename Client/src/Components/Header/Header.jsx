@@ -15,20 +15,20 @@ export default function Header() {
         <div className="center">
           <i className="fas fa-cloud headerIcon"></i>
         </div>
-        <NavBar />
         <IonAvatar className="right">
-          {
-            user ? (  
-              ""
-              ) : (
-                <>
-                <Link className="link" to="/login">LOGIN</Link>
-                <Link className="link" to="/register">REGISTER</Link>
-                </>
-                )
-              }
-        </IonAvatar>
-      </div>
+        {
+          user ? (  
+            ""
+            ) : (
+              <>
+              <Link className="link" to="/login">LOGIN</Link>
+              <Link className="link" to="/register">REGISTER</Link>
+              </>
+              )
+        }
+            </IonAvatar>
+            </div>
+      
     </>
   )
 }

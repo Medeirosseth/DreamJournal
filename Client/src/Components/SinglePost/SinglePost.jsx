@@ -1,6 +1,7 @@
 import React from 'react'
 import { useEffect, useState} from 'react'
 import Header from '../Header/Header'
+import NavBar from '../NavBar/NavBar'
 import { useLocation } from 'react-router'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
@@ -22,29 +23,53 @@ export default function SinglePost() {
 
   return (
     <>
-    <Header />
+    <NavBar />
     <div className="singlePost">
-      <div className="singlePostWrapper">
-        <div className="singlePostTitle"> 
-        <h1 className="singlePostTitle">
+    <IonCard className='topCard'>
+        <div className="singlePostTitle">
         {post.title}
-        </h1>
         </div>
-        <div className="editContainer">
+        <div className="singlePostInfo">
+        <div className="singlePostAuthor">
+        <span className="singlePostAuthor"><b>{post.username}</b></span>    
+        </div>
+        <div className="singlePostDate">
+        <span className="singlePostDate">{new Date(post.createdAt).toDateString()} </span>
+        </div>
+        <div className="singlePostEditContainer">
         <i class="fas fa-edit singlePostIcon"></i>
         <i class="fas fa-minus singlePostIcon"></i>
         </div>
-      <div className="singlePostInfo">
-      <span className="singlePostAuthor"><b>{post.username}</b></span>    
-      <span className="singlePostDate">{new Date(post.createdAt).toDateString()} </span>
-      </div>
-      <IonCard>
-        <p className="singlePostDescription">
+        </div> 
+    </IonCard>
+      <IonCard className="singlePostDescription">
+        <p>  
           {post.desc}
         </p>
       </IonCard>
-      </div>
     </div>
     </>
-  )
+    )
 }
+    // <div className="singlePost">
+    //   <div className="singlePostWrapper">
+    //     <div className="singlePostTitle"> 
+    //     <h1 className="singlePostTitle">
+    //     {post.title}
+    //     </h1>
+    //     </div>
+    //     <div className="editContainer">
+    //     <i class="fas fa-edit singlePostIcon"></i>
+    //     <i class="fas fa-minus singlePostIcon"></i>
+    //     </div>
+    //   <div className="singlePostInfo">
+    //   <span className="singlePostAuthor"><b>{post.username}</b></span>    
+    //   <span className="singlePostDate">{new Date(post.createdAt).toDateString()} </span>
+    //   </div>
+    //   <IonCard>
+    //     <p className="singlePostDescription">
+    //       {post.desc}
+    //     </p>
+    //   </IonCard>
+    //   </div>
+    // </div>

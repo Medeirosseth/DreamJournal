@@ -4,6 +4,7 @@ import axios from 'axios'
 import './postForm.css';
 import Header from '../../Components/Header/Header';
 import { Context } from '../../Context/Context';
+import NavBar from '../../Components/NavBar/NavBar';
 
 
 export default function PostForm() {
@@ -25,10 +26,11 @@ export default function PostForm() {
   }
   return (
     <>
-    <Header />
+   
     <div className="PostForm" onSubmit={handleSubmit}> 
         <form className='postForm'>
-        <IonCard> 
+        <IonCard calssName="postFormCard"> 
+
           <IonInput 
             className='postTitle' 
             placeholder= "I could Fly" 
@@ -48,8 +50,8 @@ export default function PostForm() {
           </IonTextarea>
           <div className='privateRow'>
           </div>
-          <IonButton  className="postFormButton" color="dark" type="submit">SUBMIT</IonButton>
           </IonCard>
+          <IonButton  className="postFormButton" expand="block" color="dark" type="submit">SUBMIT</IonButton>
             </form>
           </div>
         </>

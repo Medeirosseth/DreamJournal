@@ -1,5 +1,5 @@
 .postForm {
-  height: calc(100vh - 70px);
+  height: calc(100vh - 90px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,6 +11,10 @@
   
 }
 .postTitle {
+}
+
+.postFormCard{
+  margin-top: 50px;
 }
 .postText {
   align-items: center;

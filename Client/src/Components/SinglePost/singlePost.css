@@ -1,8 +1,46 @@
+
+
 .singlePost{
+  height: 100vh;
+  padding-top: 20px;
+  margin-top: 30px;
   display: flex;
+  flex-direction: column;
+  background-color:rgb(120, 122, 125);
 }
 
-.singlePostWrapper{
+.singlePostTitle{
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.singlePostDate {
+  padding: 5px 15px 5px 10px;
+  
+}
+
+.singlePostInfo {
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top:15px;
+}
+.singlePostDescription{
+  margin: 30px 10px 0 10px;
+  padding: 10px 10px 30vh 10px;
+}
+.topCard{
+  margin-left: 20px;
+  margin-right:20px;
+}
+.singlePostIcon{
+  margin-left:10px;
+}
+/*.singlePostWrapper{
+  display: flex;
+  
   padding-bottom: 20px;
   padding-right: 0px;
 }
@@ -14,15 +52,21 @@
   font-size: 20px
 }
 
+.singlePostAuthor{
+  padding-left: 20px;
+  margin-right: 10px;
+}
+
 .editContainer{
   float: right;
+  padding-right: 15px;
   font-size: 16px;
   cursor: pointer;
 }
 
 
 .singlePostIcon{
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .singlePostDate{
@@ -47,4 +91,4 @@
   font-size: 16px;
   display: flex;
   justify-content: space-between;
-}
+} */

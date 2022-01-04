@@ -1,48 +1,50 @@
-.homePage{
-  height: 100vh;
+/* .homePage{
+  height: calc(100px - 90);
   display: flex;
+  overflow: scroll;
   flex-direction: column;
   align-items: center;
   background-color: rgb(181, 192, 206);
-}
+} */
 
 .homeCloud{
-  font-size: 23px;
+  font-size: 93px;
 
 }
 
 
-.userPic {
+/* .userPic {
   height: 200px;
   width: 200px;
   box-shadow: 4px 8px 10px 1px rgba(0, 0, 0, 0.2);
   border-radius: 50%;
   justify-content: space-evenly;
-}
+} */
 
-.dreamFact{
+/* .dreamFact{
   text-align: center;
   margin-top: 15%;
   height: 200px;
   background-color: whitesmoke;
   width: 90%;
   box-shadow: 4px 8px 10px 1px rgba(0, 0, 0, 0.2);
-}
+} */
 
-.navBar {
+/* .navBar {
   display: flex;
   height: 30px;
   background-color: rgb(249, 247, 245);
   top: 0%;
   position: sticky;
-  
-}
+   */
+
 
 .home {
   flex: 3;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: scroll;
 }
 
 .posts {

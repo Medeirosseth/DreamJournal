@@ -4,6 +4,7 @@ import './home.css'
 import axios from 'axios'
 import Header from '../../Components/Header/Header'
 import Posts from '../../Components/Posts/Posts'
+import NavBar from '../../Components/NavBar/NavBar'
 
 export default function Home() {
   const [posts, setPosts] = useState([])
@@ -19,7 +20,7 @@ export default function Home() {
 
   return (
     <>
-      <Header />
+      <NavBar />
       <div className="home">
         <Posts posts={posts}/>
       </div>
