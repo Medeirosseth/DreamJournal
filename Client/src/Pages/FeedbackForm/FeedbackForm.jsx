@@ -1,5 +1,5 @@
 import React from 'react'
-import { IonButton, IonTextarea, IonToolbar, IonInput, IonItem, IonLabel, IonList, IonItemDivider, IonToggle, IonCard } from '@ionic/react';
+import { IonButton, IonTextarea, IonInput, IonLabel } from '@ionic/react';
 import Header from '../../Components/Header/Header';
 import './feedbackForm.css'
 

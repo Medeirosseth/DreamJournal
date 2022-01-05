@@ -1,5 +1,5 @@
 import React, {useContext} from 'react'
-import { IonBadge, IonNav } from '@ionic/react'
+import { IonNav } from '@ionic/react'
 import './navBar.css'
 import { Link } from 'react-router-dom'
 import { Context } from '../../Context/Context'

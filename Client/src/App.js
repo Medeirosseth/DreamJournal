@@ -3,17 +3,10 @@ import { IonApp } from "@ionic/react";
 import Register from "./Pages/Register/Register";
 import Login from './Pages/Login/Login';
 import Home from "./Pages/HomeScreen/Home";
-import Posts from "./Components/Posts/Posts";
 import PostForm from './Pages/postForm/PostForm';
 import Settings from './Pages/Settings/Settings';
-import Header from './Components/Header/Header';
-import Footer from './Components/Footer/Footer';
-import FeedbackForm from './Pages/FeedbackForm/FeedbackForm';
-import { BrowserRouter as Router, Routes, Switch, Route, Link} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import { Context } from './Context/Context';
-import NavBar from './Components/NavBar/NavBar';
-import axios from 'axios'
-import UserPost from './Components/UserPost/UserPost';
 import SinglePost from './Components/SinglePost/SinglePost';
 
 function App() {
@@ -42,6 +35,5 @@ function App() {
   
   export default App;
   
- 
 
 

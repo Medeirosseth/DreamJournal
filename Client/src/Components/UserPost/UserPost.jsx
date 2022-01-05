@@ -2,7 +2,6 @@ import React from 'react'
 import { IonCard, IonText} from '@ionic/react'
 import { Link } from 'react-router-dom'
 import './userPost.css'
-import Header from '../Header/Header'
 
 
 export default function UserPost({ post }) {
@@ -28,8 +27,3 @@ export default function UserPost({ post }) {
     </>
   )
 }
-
-          // this is for dream category
-          // <div className="emoji"> <i className="fas fa-cloud-rain"></i></div>
-          
-          

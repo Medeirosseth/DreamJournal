@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { IonBadge, IonLabel, IonCard, IonInput, IonButton } from '@ionic/react';
+import { IonLabel, IonInput, IonButton } from '@ionic/react';
 import Header from '../../Components/Header/Header';
 import { Context } from '../../Context/Context';
 import './settings.css';

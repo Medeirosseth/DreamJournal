@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { IonCard, IonCardSubtitle, IonLabel, IonInput, IonItemDivider, IonButton  } from '@ionic/react'
 import './register.css'
 import { Link } from 'react-router-dom';
 import axios from 'axios'
