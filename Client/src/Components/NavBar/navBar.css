@@ -3,6 +3,7 @@
   height: 30px;
   background-color: rgb(249, 247, 245);
   margin-bottom: 20px;
+  z-index: 999;
 }
 
 .navIcon{
@@ -15,7 +16,7 @@
 }
 
 
-.home {
+.homeLink {
   flex: 3;
   display: flex;
   justify-content: center;

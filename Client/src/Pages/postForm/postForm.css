@@ -1,11 +1,67 @@
-.postForm {
+
+.postFormMain{
+  margin-top: 30px;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  background-color:gray;
+  padding-top: 25%;
+
+}  
+
+.postForm{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  height:100vh;
+  width: 100%;
+}
+.postFormCard{
+  display:flex;
+  flex-direction:column;
+  height:30%;
+  width:100%;
+}
+
+.postTitle{
+  margin-left: 10px;
+}
+.postText {
+  padding: 6px 5px 30px 5px;
+}
+
+.postFormTitleCard {
+  margin: 20px 20px 50px 20px;
+}
+
+.postFormTextAreaCard {
+  margin: 0 15px 0 15px;
+  
+}
+.postFormButton{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  width:100px;
+}
+  
+  
+  
+  
+  
+  
+
+  
+  /* .postForm {
   height: calc(100vh - 90px);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
+  border: solid black 1px;
+} */ 
+/*
 ::placeholder {
   padding-left: 10px;
   
@@ -37,7 +93,7 @@
   align-items: center;
   margin: 5%;
   
-}
+} */
 
 /* .privacyToggle{
   font-size: 20px;

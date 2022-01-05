@@ -14,7 +14,7 @@ export default function NavBar() {
   
   return (
     <IonNav className="navBar">
-      <div className="home">
+      <div className="homeLink">
         <Link className="link" to="/">
           <i class="fas fa-shapes navIcon"></i>
         </Link>

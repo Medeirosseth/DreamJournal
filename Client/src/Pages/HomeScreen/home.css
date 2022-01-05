@@ -7,10 +7,10 @@
   background-color: rgb(181, 192, 206);
 } */
 
-.homeCloud{
+/* .homeCloud{
   font-size: 93px;
 
-}
+} */
 
 
 /* .userPic {
@@ -40,13 +40,12 @@
 
 
 .home {
-  flex: 3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: scroll;
+  background-color: rgb(249, 249, 230);
+  margin-top: 20px;
 }
 
+/*
 .posts {
   flex: 3;
   display: flex;
@@ -66,4 +65,4 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */

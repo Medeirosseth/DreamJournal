@@ -14,26 +14,28 @@
 
 .userPost{
   width: 53vh;
+  margin: 5px 10px 5px 10px;
 }
 
 .postBar{
   display: flex;
+  justify-content: space-between;
   width:100%;
   align-items: center;
 }
 
 .emoji{
-  flex: .5;
+  
 }
 
 .postDreamTitle{
-  flex: 3.5;
+  
   display: flex;
   font-weight: bold  
 }
 
 .date{
-  flex: .5;
+  
 }
 
 .delete{

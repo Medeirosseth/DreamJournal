@@ -26,37 +26,38 @@ export default function PostForm() {
   }
   return (
     <>
-   
-    <div className="PostForm" onSubmit={handleSubmit}> 
+      <NavBar/>
+      <div className="postFormMain" onSubmit={handleSubmit}> 
         <form className='postForm'>
-        <IonCard calssName="postFormCard"> 
-
-          <IonInput 
-            className='postTitle' 
-            placeholder= "I could Fly" 
-            spellcheck='true' required 
-            onIonChange={e=> setTitle(e.target.value)}
-            >
-            Title:
-          </IonInput>
-          <IonTextarea 
-            className='postText' 
-            placeholder="Last night I dreamt that I was able to fly. What did I do with my new powers you ask?" 
-            spellcheck='true' 
-            required
-            onIonChange={e=> setDesc(e.target.value)}
-            >
-            The Dream:
-          </IonTextarea>
-          <div className='privateRow'>
+          <div className="postFormCard"> 
+            <IonCard className='postFormTitleCard'>
+              <IonInput 
+                className='postTitle' 
+                placeholder= "I could Fly" 
+                spellcheck='true' required 
+                onIonChange={e=> setTitle(e.target.value)}
+                >
+                Title:
+              </IonInput>
+            </IonCard>
+            <IonCard className='postFormTextAreaCard'>
+              <IonTextarea 
+                className='postText' 
+                placeholder="Last night I dreamt that I was able to fly. What did I do with my new powers you ask?" 
+                spellcheck='true' 
+                required
+                onIonChange={e=> setDesc(e.target.value)}
+                >
+                The Dream:
+              </IonTextarea>
+            </IonCard>  
           </div>
-          </IonCard>
           <IonButton  className="postFormButton" expand="block" color="dark" type="submit">SUBMIT</IonButton>
-            </form>
-          </div>
-        </>
-      )
-    }
+        </form>
+      </div>
+    </>
+  )
+}
         
         // <div className="emojis"> 
         //   <span id='Nightmare'><i className="fas fa-book-dead dreamCategories"></i></span>
