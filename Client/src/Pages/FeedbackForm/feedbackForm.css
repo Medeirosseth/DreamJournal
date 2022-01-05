@@ -1,0 +1,74 @@
+.feedBack{
+  background-color: rgb(181, 192, 206);
+  height: 100vh;
+}
+
+.feedBackContainer{
+
+}
+.feedbackForm {
+  /* margin-top: 50px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgb(181, 192, 206); */
+}
+.feedbackLogo {
+  width:100%;
+  height:auto;
+}
+
+.cloud{
+  font-size: 170px;
+  position: relative;
+  z-index: 1;
+}
+
+.cloudContainer {
+  margin-top: 15px;
+  display: flex;
+  position: relative;
+}
+
+.cloudFeedBack {
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  margin-top: 105px;
+  margin-left: 25px;
+  z-index: 2;
+}
+
+.feedbackEmail{
+  padding-left: 15px;
+  width: 80%;
+  height: 25px;
+  background-color: white;
+  border-radius: 5px;
+  
+}
+.feedbackText{
+  margin-bottom: 10px;
+  height: 100px;
+  background-color: white;
+  width: 300px;
+  border-radius: 5px;
+}
+.inputRow1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.inputRow2 {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
+}
+.inputRow2Title {
+ margin-bottom: 5px;
+}

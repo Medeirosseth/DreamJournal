@@ -1,0 +1,6 @@
+.posts{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(249, 247, 245);
+  overflow: scroll;
+}

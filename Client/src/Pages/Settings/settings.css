@@ -1,0 +1,78 @@
+.settingsContainer {
+  height: 100vh;
+  background-color: rgb(181, 192, 206);
+}
+.settingsLogo {
+  margin-left: 50px;
+  width:70%;
+  height:auto;
+  border-radius: 50%;
+}
+.settingsButtons {
+  display: flex;
+  flex-direction: column;
+}
+
+.cloud{
+  font-size: 170px;
+  position: relative;
+  z-index: 1;
+}
+
+.cloudContainer {
+  margin-top: 15px;
+  display: flex;
+  position: relative;
+}
+
+.cloudSettings {
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  margin-top: 105px;
+  margin-left: 25px;
+  z-index: 2;
+
+}
+.settingsFormRow1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin:0 0 20px 10px;
+  
+}
+.settingsFormRow2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin:0 0 20px 10px;
+}
+.settingsFormRow3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  margin:0 0 20px 10px;
+}
+
+.settingInputName {
+  background-color:white;
+  border-radius: 5px;
+  
+}
+.settingLabelName {
+  background-color: rgb(181, 192, 206);
+}
+
+.saveChangesButton{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  
+}

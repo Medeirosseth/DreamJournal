@@ -1,63 +1,62 @@
 import React, { useState } from 'react'
-import { IonCard, IonCardSubtitle, IonLabel, IonInput, IonItemDivider, IonButton  } from '@ionic/react'
 import './register.css'
+import { Link } from 'react-router-dom';
+import axios from 'axios'
 
 export default function Register() {
-  // const [userName, setUserName] = useState("")
-  // const [email, setEmail] = useState("")
-  // const [userPassword, setPassword] = useState("")
+  const [username, setUserName] = useState("")
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
+  const [error, setError] = useState(false)
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // const res = axios.post("/auth/register", {
-    //   username, 
-    //   email, 
-    //   password,
-    // });
-    //   console.log(res)
+    setError(false)
+    try{
+
+    const res = await axios.post("/auth/register", {
+      username, 
+      email, 
+      password, 
+    });
+    res.data && window.location.replace("/login")
+  } catch (err) {
+    setError(err)
+  }
   }
 
   return (
     <div className="register">
-      <span className="registerTitle"> Register </span>
-      <div className="registerImgContainer">
-        <img className="registerLogo" src='https://static.independent.co.uk/2021/07/19/16/newFile-10.jpg?width=1200&auto=webp&quality=75'alt='dr.eam logo'/>
-      </div>
-      <form className="registerForm" onIonSubmit={handleSubmit} >
-      <IonCard className="registerContainer">
-        <IonCardSubtitle className="registerTitle">
-          <IonLabel className="registerLabel"> UserName</IonLabel>
-          <IonInput 
-            className="registerInput"
-            placeHOlder="Enter UserName"
-            // onIonChange={(e) => setUserName(e.target.value)}
-            >
-          </IonInput>
-          <IonItemDivider />
-          <IonLabel className="registerLabel"> Email</IonLabel>
-          <IonInput 
-            className="registerInput"
-            placeHOlder="Enter Email"
-            // onIonChange={(e) => setEmail(e.target.value)}
-            >
-          </IonInput>
-          <IonItemDivider />
-          <IonLabel className="registerLabel"> Password</IonLabel>
-          <IonInput 
-            className="registerInput"
-            placeHOlder="Enter PassWord"
-            // onIonChange={(e) => setPassword(e.target.value)}
-            >
-          </IonInput>
-        </IonCardSubtitle>
-        </IonCard>
-        <IonButton>
-        <span className="link  registerButton">Register</span>
-      </IonButton>
+    <i class="fas fa-cloud"></i>
+      <span className="registerTitle">REGISTER</span>
+      <form className="registerForm" onSubmit={handleSubmit}>
+        <input 
+          type="text" 
+          className="registerInput" 
+          placeholder="userName" 
+          onChange={e => setUserName(e.target.value)}
+        />
+        <input 
+          type="text" 
+          className="registerInput" 
+          placeholder="Email" 
+          onChange={e => setEmail(e.target.value)}
+        />
+    
+        <input 
+          type="text" 
+            className="registerInput" 
+            placeholder="Password" 
+            onChange={e => setPassword(e.target.value)}
+          />
+        <button className="registerButton" type="submit">Register</button>
       </form>
-      <IonButton>
-        <span className="link loginButton">Login</span>
-      </IonButton>
+      <div className="registerLoginWrapper">
+        <Link to="login">
+          <button className="registerLoginButton">Login</button>
+        </Link>
+      </div>
+      { error && <span className="error">Something went wrong <i class="fas fa-sad-tear"></i></span>}
     </div>
   )
 }

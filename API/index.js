@@ -14,7 +14,8 @@ mongoose
   .connect(process.env.MONGO_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  // useCreateIndex: true
+  // useCreateIndex: true,
+  // useFindAndModify: true
 })
   .then(console.log("Connected to MongoDB"))
   .catch((err) => console.log(err));
@@ -24,6 +25,6 @@ app.use("/api/users", userRoute);
 app.use("/api/posts", postRoute);
 app.use("/api/categories", categoryRoute);
 
-app.listen("3000", () => {
+app.listen("3001", () => {
   console.log("backend is running")
 })

@@ -2,12 +2,21 @@
   display: flex;
   height: 30px;
   background-color: rgb(249, 247, 245);
-  top: 0%;
-  position: fixed;
-  
+  margin-bottom: 20px;
+  z-index: 999;
 }
 
-.home {
+.navIcon{
+  color: black;
+  font-size: 20px;
+}
+
+.navIcon:hover {
+  font-size: 25px;
+}
+
+
+.homeLink {
   flex: 3;
   display: flex;
   justify-content: center;
@@ -21,14 +30,7 @@
   align-items: center;
 }
 
-.dictionary {
-  flex: 3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.settings {
+.logout {
   flex: 3;
   display: flex;
   justify-content: center;

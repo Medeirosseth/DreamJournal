@@ -1,5 +1,5 @@
 import React from 'react';
-import { IonBadge, IonCard, IonInput, IonButton } from '@ionic/react';
+import {  IonCard, IonInput, IonButton } from '@ionic/react';
 
 import './settings.css';
 
