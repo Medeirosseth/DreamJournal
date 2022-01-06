@@ -6,8 +6,8 @@ import { Context } from '../../Context/Context'
 
 
 export default function NavBar() {
-  const {user, dispatch} = useContext(Context)
-  
+  const { dispatch} = useContext(Context)
+  //user ^
   const handleLogOut = () => {
     dispatch({type: "LOGOUT"})
   }

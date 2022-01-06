@@ -1,8 +1,7 @@
 import React, {useState, useContext} from 'react'
-import { IonButton, IonTextarea, IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonInput, IonItem, IonLabel, IonList, IonItemDivider, IonToggle, IonCard } from '@ionic/react';
+import { IonButton, IonTextarea, IonInput, IonCard } from '@ionic/react';
 import axios from 'axios'
 import './postForm.css';
-import Header from '../../Components/Header/Header';
 import { Context } from '../../Context/Context';
 import NavBar from '../../Components/NavBar/NavBar';
 

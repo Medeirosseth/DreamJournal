@@ -1,8 +1,7 @@
 import React, { useRef, useContext } from 'react'
 import { Link } from 'react-router-dom'
-import {IonInput, IonCard,  IonItemDivider, IonButton } from '@ionic/react'
 import './login.css'
-import { Context, ContextProvider } from '../../Context/Context';
+import { Context} from '../../Context/Context';
 import axios from 'axios'
 
 export default function Login() {

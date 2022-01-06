@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import { IonCard, IonCardContent, IonInput, IonAvatar } from '@ionic/react'
 import './home.css'
 import axios from 'axios'
-import Header from '../../Components/Header/Header'
 import Posts from '../../Components/Posts/Posts'
 import NavBar from '../../Components/NavBar/NavBar'
 

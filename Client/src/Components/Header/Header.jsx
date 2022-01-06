@@ -1,11 +1,9 @@
-import React, { useContext } from 'react'
-import { IonAvatar } from '@ionic/react'
-import { Context } from '../../Context/Context'
+import React from 'react'
 import NavBar from '../NavBar/NavBar'
 import './header.css'
 
 export default function Header() {
-  const { user } = useContext((Context));
+  // const { user } = useContext((Context));
   return (
     <>
       <div className="header">

@@ -5,7 +5,6 @@ import Login from './Pages/Login/Login';
 import Home from "./Pages/HomeScreen/Home";
 import Header from "./Components/Header/Header.jsx";
 import PostForm from './Pages/postForm/PostForm';
-import Settings from './Pages/Settings/Settings';
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import { Context } from './Context/Context';
 import SinglePost from './Components/SinglePost/SinglePost';
@@ -25,7 +24,6 @@ function App() {
           <Route path="/register"> {user ? <Home/> : <Register />} </Route>
           <Route path="/login"> {user ? <Home/> : <Login />} </Route>
           <Route path="/write"> {user ? <PostForm/> : <Register />} </Route>
-          <Route path="/settings"> {user ? <Settings/> : <Register />} </Route>
           <Route path="/post/:id">
             <SinglePost />
           </Route>
@@ -38,6 +36,5 @@ function App() {
   export default App;
   
   
-  // <Router> 
-    // </Router>
+  // <Route path="/settings"> {user ? <Settings/> : <Register />} </Route>
 
