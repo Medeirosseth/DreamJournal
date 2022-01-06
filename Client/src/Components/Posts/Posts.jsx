@@ -6,10 +6,11 @@ import UserPost from '../UserPost/UserPost'
 import Footer from '../zFooter/Footer'
 import SinglePost from '../SinglePost/SinglePost'
 
+
 export default function Posts({ posts }) {
   return (
     <>
-      <div className="Posts">
+      <div className="posts">
         {posts.map((p) => (
           <UserPost post={p} />
         ))}

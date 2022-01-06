@@ -1,8 +1,9 @@
 .navBar {
   display: flex;
+  margin-top: 42px;
   height: 30px;
-  background-color: rgb(249, 247, 245);
-  margin-bottom: 20px;
+  background-color: rgba(181, 182, 161, 0.453);
+  margin-bottom: 70px;
   z-index: 999;
 }
 

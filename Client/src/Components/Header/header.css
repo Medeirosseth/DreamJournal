@@ -4,6 +4,7 @@
   width: 100%;
   background-color: rgba(206, 202, 205, 0.653);
   top: 0%;
+  /* margin-bottom: 20px; */
   position: sticky;
   z-index: 999;
 }

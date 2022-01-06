@@ -5,6 +5,7 @@
   color: #444;
   line-height: 24px;
   margin-top: 15px;
+  padding: 10px 0 -2px 0 ;
   overflow: hidden;
   text-overflow: ellipsis; 
   display: -webkit-box;
@@ -14,7 +15,8 @@
 
 .userPost{
   width: 53vh;
-  margin: 5px 10px 5px 10px;
+  margin: 0 10px 0 10px;
+
 }
 
 .postBar{
@@ -36,12 +38,7 @@
   justify-content: flex-end;
 }
 
-.posts{
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(249, 247, 245);
-  overflow: scroll;
-}
+
 
 .postTitle{
   display: flex;

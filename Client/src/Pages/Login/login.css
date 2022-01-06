@@ -51,7 +51,7 @@
 
 .loginButton:disabled{
   cursor: not-allowed;
-  background: red;
+  /* background: red; */
 }
 
 .loginRegisterButton{
