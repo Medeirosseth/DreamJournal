@@ -16,6 +16,20 @@
 
 }
 
+.singlePostTitleInput {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.singlePostTitleInput:focus{
+  outline: none;
+  border: none;
+  color: rgb(155, 146, 146);
+  border-bottom:  1px solid lightgrey;
+}
+
 .singlePostDate {
   padding: 5px 15px 5px 10px;
   
@@ -31,12 +45,31 @@
   margin: 30px 10px 0 10px;
   padding: 10px 10px 10vh 10px;
 }
+.singlePostDescription::first-letter{
+  margin-left: 20px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.singlePostDescriptionInput{
+  margin: 30px 10px 0 10px;
+  padding: 10px 10px 40vh 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  color: rgb(128, 125, 125);
+}
 .topCard{
   margin-left: 20px;
   margin-right:20px;
 }
 .singlePostIcon{
   margin-left:10px;
+}
+
+.singlePostButton{
+  margin: 15px;
+  cursor: pointer;
 }
 /*.singlePostWrapper{
   display: flex;
@@ -80,11 +113,6 @@
   padding-right: 10px;
 }
 
-.singlePostDescription::first-letter{
-  margin-left: 20px;
-  font-size: 25px;
-  font-weight: 700;
-}
 
 .singlePostInfo{
   margin-bottom: 20px;
