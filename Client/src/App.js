@@ -24,6 +24,7 @@ function App() {
           <Route path="/login"> {user ? <Home/> : <Login />} </Route>
           <Route path="/write"> {user ? <PostForm/> : <Register />} </Route>
           <Route path="/post/:id">
+          
             <SinglePost />
           </Route>
         </Switch>
