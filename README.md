@@ -1,4 +1,4 @@
-#### Dream Space
+#### :last_quarter_moon: Dream Space :first_quarter_moon:
 
 #### By _**:neckbeard:Seth Medeiros**_
 
@@ -15,7 +15,7 @@
 
 ## Description:memo:
 
-_A web application that utilizes functional React components React Router Dom, and HTML/CSS for the end. Node, MongoDB REST API using Express framework for the backing giving the application full CRUD capabilities _
+A web application that allows users to journal their dreams by utilizing functional React components React Router Dom, and HTML/CSS for the end. Node, MongoDB REST API using Express framework for the backing giving the application full CRUD capabilities
 
 
 ![DreamJournal](/DreamJournal.JPG)
