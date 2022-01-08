@@ -25,7 +25,7 @@ export default function NavBar() {
         </Link>
       </div>
       <div className="logout"> 
-        <i onClick={handleLogOut} class="fas fa-sign-out-alt"></i>
+        <i onClick={handleLogOut} class="fas fa-sign-out-alt navIcon"></i>
       </div>
       </IonNav>
       )

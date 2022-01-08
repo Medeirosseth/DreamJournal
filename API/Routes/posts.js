@@ -69,6 +69,16 @@ router.get("/:id", async (req, res) => {
   }
 });
 
+// GET POST BY USER NAME
+// router.get("/:username", async (req, res) => {
+//   try {
+//     const post = await Post.findById(req.params.username);
+//     res.status(200).json(post);
+//   } catch (err) {
+//     res.status(500).json(err);
+//   }
+// });
+
 
 //GET ALL POSTS
 router.get("/", async (req, res) => {

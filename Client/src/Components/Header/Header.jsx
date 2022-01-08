@@ -8,7 +8,7 @@ export default function Header() {
     <>
       <div className="header">
         <div className="left"></div>
-        <div className="center"><i class="fas fa-cloud"></i></div>
+        <div className="center"><i class="fas fa-cloud navCloud"></i></div>
         <div className="right"></div>
         <NavBar />
       </div>
