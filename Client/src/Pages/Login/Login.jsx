@@ -27,6 +27,7 @@ export default function Login() {
   
   return (
     <div className="login">
+      <i class="fas fa-cloud loginCloud"></i>
       <span className="loginTitle">LOGIN</span>
       
       <form className="loginForm"  onSubmit={handleSubmit}>

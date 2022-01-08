@@ -27,7 +27,7 @@ export default function Register() {
 
   return (
     <div className="register">
-    <i class="fas fa-cloud"></i>
+    <i class="fas fa-cloud registerCloud"></i>
       <span className="registerTitle">REGISTER</span>
       <form className="registerForm" onSubmit={handleSubmit}>
         <input 

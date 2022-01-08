@@ -38,8 +38,6 @@
   justify-content: flex-end;
 }
 
-
-
 .postTitle{
   display: flex;
 }
@@ -66,4 +64,11 @@ margin-left: 20px;
 
 .userPost{
 margin-top: 30px;
+}
+
+@media (min-width: 500px) {
+  .userPost {
+    width: 100%;
+  }
+
 }

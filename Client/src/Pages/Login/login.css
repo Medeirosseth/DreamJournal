@@ -16,13 +16,20 @@
   font-weight: 800;
 }
 
-.loginTitle{
+.loginCloud{
+  font-size: 140px;
+  position: absolute;
+  margin-bottom: 250px;
   color: white;
-  font-size: 50px;
+}
+
+.loginTitle{
+  position: relative;
+  color: rgb(196, 176, 199);
+  font-size: 35px;
 }
 
 .loginForm{
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -56,9 +63,10 @@
 
 .loginRegisterButton{
   /* position: absolute; */
-  bottom: 60px;
+  
   border: none;
-  background-color: none;
+  background: none;
+  color: white;
   
 }
 

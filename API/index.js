@@ -6,6 +6,7 @@ const authRoute = require("./routes/auth")
 const userRoute = require("./routes/users")
 const postRoute = require("./Routes/posts")
 const categoryRoute = require('./Routes/category')
+require('dotenv').config();
 
 dotenv.config()
 app.use(express.json())
@@ -25,6 +26,6 @@ app.use("/api/users", userRoute);
 app.use("/api/posts", postRoute);
 app.use("/api/categories", categoryRoute);
 
-app.listen("3001", () => {
+app.listen(process.env.PORT || 3001, () => {
   console.log("backend is running")
 })
