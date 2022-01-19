@@ -19,8 +19,8 @@ export default function PostForm() {
       desc 
     }
     try {
-      const res = await axios.post("/posts", newPost);
-      window.location.replace("/post/" + res.data._id);
+      const res = await axios.post("https://dreamjournalsam.herokuapp.com/posts", newPost);
+      window.location.replace("https://dreamjournalsam.herokuapp.com/post/" + res.data._id);
     } catch (err) {}
   }
   return (

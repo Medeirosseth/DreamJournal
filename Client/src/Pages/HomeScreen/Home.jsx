@@ -14,10 +14,10 @@ export default function Home() {
   useEffect(() => {
     const fetchPosts = async ()=>{
     if (user){
-      const res = await axios.get(`/posts/?user=${user.username}`)
+      const res = await axios.get(`https://dreamjournalsam.herokuapp.com/posts/?user=${user.username}`)
       setPosts(res.data)
     } else {
-      const res = await axios.get(`/posts`)
+      const res = await axios.get(`https://dreamjournalsam.herokuapp.com/posts`)
       setPosts(res.data)
 
     }
